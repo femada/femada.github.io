@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>git使用指南 | 马达</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="流行框架笔记
+本着不负责任的态度去学习也就是玩儿玩儿的心态
+
+
+Table of Contents
+
+课程大纲
+Markdown
+Markdown 介绍
+Markdown 的优点
+实时预览编辑器
+Markdown 基本语法
+Markdown 相关插件
+Markdown 使用场景
+用 Markdown 写一封漂亮的电子邮件
+使用 GitBook 制作电子书
+自己动手做一个 Markdown 实时预览">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git使用指南">
+<meta property="og:url" content="http://yoursite.com/2016/10/09/git使用指南/index.html">
+<meta property="og:site_name" content="马达">
+<meta property="og:description" content="流行框架笔记
+本着不负责任的态度去学习也就是玩儿玩儿的心态
+
+
+Table of Contents
+
+课程大纲
+Markdown
+Markdown 介绍
+Markdown 的优点
+实时预览编辑器
+Markdown 基本语法
+Markdown 相关插件
+Markdown 使用场景
+用 Markdown 写一封漂亮的电子邮件
+使用 GitBook 制作电子书
+自己动手做一个 Markdown 实时预览">
+<meta property="og:image" content="http://yoursite.com/img\xixi.jpg">
+<meta property="og:image" content="http://yoursite.com/img/md.png">
+<meta property="og:image" content="http://yoursite.com/img/html.png">
+<meta property="og:image" content="http://yoursite.com/img/word.jpg">
+<meta property="og:image" content="http://yoursite.com/img/svn.png">
+<meta property="og:image" content="http://yoursite.com/img/visualsvn.jpg">
+<meta property="og:image" content="http://yoursite.com/img/tortoisesvn.png">
+<meta property="og:image" content="http://yoursite.com/img/hack.jpg">
+<meta property="og:image" content="http://yoursite.com/img/shell.jpg">
+<meta property="og:image" content="http://yoursite.com/img/vim.gif">
+<meta property="og:updated_time" content="2016-10-09T14:15:48.399Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git使用指南">
+<meta name="twitter:description" content="流行框架笔记
+本着不负责任的态度去学习也就是玩儿玩儿的心态
+
+
+Table of Contents
+
+课程大纲
+Markdown
+Markdown 介绍
+Markdown 的优点
+实时预览编辑器
+Markdown 基本语法
+Markdown 相关插件
+Markdown 使用场景
+用 Markdown 写一封漂亮的电子邮件
+使用 GitBook 制作电子书
+自己动手做一个 Markdown 实时预览">
+<meta name="twitter:image" content="http://yoursite.com/img\xixi.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="马达" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">马达</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git使用指南" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/09/git使用指南/" class="article-date">
+  <time datetime="2016-10-09T14:08:42.000Z" itemprop="datePublished">2016-10-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git使用指南
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="流行框架笔记"><a href="#流行框架笔记" class="headerlink" title="流行框架笔记"></a>流行框架笔记</h1><blockquote>
+<p>本着不负责任的态度去学习<br>也就是玩儿玩儿的心态</p>
+</blockquote>
+<hr>
+<h2 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h2><!-- MarkdownTOC -->
+<ul>
+<li><a href="#课程大纲">课程大纲</a></li>
+<li><a href="#markdown">Markdown</a><ul>
+<li><a href="#markdown-介绍">Markdown 介绍</a></li>
+<li><a href="#markdown-的优点">Markdown 的优点</a></li>
+<li><a href="#实时预览编辑器">实时预览编辑器</a></li>
+<li><a href="#markdown-基本语法">Markdown 基本语法</a></li>
+<li><a href="#markdown-相关插件">Markdown 相关插件</a></li>
+<li><a href="#markdown-使用场景">Markdown 使用场景</a></li>
+<li><a href="#用-markdown-写一封漂亮的电子邮件">用 Markdown 写一封漂亮的电子邮件</a></li>
+<li><a href="#使用-gitbook-制作电子书">使用 GitBook 制作电子书</a></li>
+<li><a href="#自己动手做一个-markdown-实时预览编辑器">自己动手做一个 Markdown 实时预览编辑器</a></li>
+<li><a href="#thanks">Thanks</a></li>
+</ul>
+</li>
+<li><a href="#版本控制">版本控制</a><ul>
+<li><a href="#问题1：历史记录">问题1：历史记录</a></li>
+<li><a href="#问题2：多人协作">问题2：多人协作</a></li>
+<li><a href="#解决问题：软件">解决问题：软件</a></li>
+<li><a href="#那什么是版本控制呢？">那什么是版本控制呢？</a></li>
+<li><a href="#版本管理分类">版本管理分类</a></li>
+</ul>
+</li>
+<li><a href="#集中式版本控制---svn">集中式版本控制 - SVN</a><ul>
+<li><a href="#集中式：svn">集中式：SVN</a></li>
+<li><a href="#一些术语">一些术语</a></li>
+<li><a href="#使用-visualsvn-搭建-svn-服务器">使用 VisualSVN 搭建 SVN 服务器</a></li>
+<li><a href="#使用-tortoisesvn-作为-svn-客户端">使用 TortoiseSVN 作为 SVN 客户端</a></li>
+<li><a href="#tortoisesvn-客户端基本操作流程">TortoiseSVN 客户端基本操作流程</a></li>
+<li><a href="#关于冲突">关于冲突</a></li>
+<li><a href="#版本管理使用建议">版本管理使用建议</a></li>
+</ul>
+</li>
+<li><a href="#命令行">命令行</a><ul>
+<li><a href="#gui-vs-cli">GUI VS CLI</a></li>
+<li><a href="#shell">shell</a></li>
+<li><a href="#终端仿真器">终端仿真器</a></li>
+<li><a href="#安装-git-for-windows-客户端体验-shell">安装 Git for Windows 客户端体验 shell</a></li>
+<li><a href="#打开和退出终端">打开和退出终端</a></li>
+<li><a href="#使用终端操作文件系统">使用终端操作文件系统</a></li>
+<li><a href="#使用-less-命令浏览文件内容">使用 less 命令浏览文件内容</a></li>
+</ul>
+</li>
+<li><a href="#文本编辑器---vi">文本编辑器 - vi</a><ul>
+<li><a href="#介绍">介绍</a></li>
+<li><a href="#为什么学习-vi">为什么学习 vi</a></li>
+<li><a href="#vi-的背景介绍">vi 的背景介绍</a></li>
+<li><a href="#启动和停止-vi">启动和停止 vi</a></li>
+<li><a href="#编辑模式">编辑模式</a><ul>
+<li><a href="#创建新文件编辑已有文件">创建新文件/编辑已有文件</a></li>
+<li><a href="#插入模式">插入模式</a></li>
+<li><a href="#保存工作">保存工作</a></li>
+</ul>
+</li>
+<li><a href="#移动光标">移动光标</a></li>
+<li><a href="#基本编辑">基本编辑</a><ul>
+<li><a href="#撤销">撤销</a></li>
+<li><a href="#删除">删除</a></li>
+<li><a href="#粘贴">粘贴</a></li>
+<li><a href="#复制">复制</a></li>
+<li><a href="#连接行">连接行</a></li>
+</ul>
+</li>
+<li><a href="#查找和替换">查找和替换</a><ul>
+<li><a href="#查找一行">查找一行</a></li>
+<li><a href="#查找整个文件">查找整个文件</a></li>
+<li><a href="#全局查找和替换">全局查找和替换</a></li>
+</ul>
+</li>
+<li><a href="#编辑多个文件">编辑多个文件</a><ul>
+<li><a href="#文件之间跳转">文件之间跳转</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#分布式版本控制---git">分布式版本控制 - Git</a><ul>
+<li><a href="#分布式版本管理概念">分布式版本管理概念</a></li>
+<li><a href="#linus-benedict-torvalds">Linus Benedict Torvalds</a></li>
+<li><a href="#git-诞生历史">git 诞生历史</a></li>
+<li><a href="#安装-git-环境">安装 git 环境</a></li>
+<li><a href="#初始设置">初始设置</a></li>
+<li><a href="#简单操作">简单操作</a></li>
+<li><a href="#分支操作">分支操作</a></li>
+<li><a href="#更改提交">更改提交</a></li>
+</ul>
+</li>
+<li><a href="#about-me">About me</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+<h2 id="课程大纲"><a href="#课程大纲" class="headerlink" title="课程大纲"></a>课程大纲</h2><ul>
+<li>Markdown</li>
+<li>SVN</li>
+<li>Git<ul>
+<li>shell</li>
+<li>vi 编辑器</li>
+</ul>
+</li>
+<li>NPM</li>
+<li>bower</li>
+<li>AngularJS</li>
+<li>gulp</li>
+<li>微信小程序</li>
+</ul>
+<p>总而言之，这是一门教你程序员如何装 x 的技能，一起 get 吧。</p>
+<p><img src="img\xixi.jpg" alt="xixi"></p>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><blockquote>
+<p>专注写作，提高生产力</p>
+</blockquote>
+<h3 id="Markdown-介绍"><a href="#Markdown-介绍" class="headerlink" title="Markdown 介绍"></a>Markdown 介绍</h3><p>轻量级标记语言（html、xml），2004 年被 <code>John Gruber</code> 创造，<br>它允许人们“使用易读易写的纯文本格式编写文档”，<br>Markdown 最重要的设计就是可读性，<br>Markdown 可以选择性的转换为 HTML 文档格式，<br>很多网站目前都使用了 Markdown 或者其变种，例如Github、简书等大型社区。</p>
+<p>下面是一个 demo：</p>
+<p>markdown 源文档：</p>
+<p><img src="img/md.png" alt="markdown"></p>
+<p>转换过后的 HTML：</p>
+<p><img src="img/html.png" alt="markdown - html"></p>
+<h3 id="Markdown-的优点"><a href="#Markdown-的优点" class="headerlink" title="Markdown 的优点"></a>Markdown 的优点</h3><ul>
+<li>纯文本，所以兼容性极强，可以用所有文本编辑器打开</li>
+<li>专注于文字写作而不是排版</li>
+<li>格式转换方便，可以轻松转换为 HTML、PPT、电子书等</li>
+<li>Markdown 标记语法简单好记，可读性强</li>
+</ul>
+<h3 id="实时预览编辑器"><a href="#实时预览编辑器" class="headerlink" title="实时预览编辑器"></a>实时预览编辑器</h3><p><a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="external">月光博客 - 好用的Markdown编辑器一览</a></p>
+<ul>
+<li>dillinger</li>
+<li>马克飞象</li>
+<li>简书</li>
+<li>MarkdownPad</li>
+<li>Sublime Text<ul>
+<li>配合 <code>Markdown Preview</code> 插件</li>
+</ul>
+</li>
+<li>Webstorm<ul>
+<li>配合插件</li>
+</ul>
+</li>
+<li>gitbook</li>
+</ul>
+<p>编辑实时预览工具只是为了辅助教学而已，<br>我们真正在进行写作的时候，其实是不需要实时预览的，<br>因为 Markdown 标记语言本身已经足够清晰了。</p>
+<h3 id="Markdown-基本语法"><a href="#Markdown-基本语法" class="headerlink" title="Markdown 基本语法"></a>Markdown 基本语法</h3><ul>
+<li>标题</li>
+<li>段落</li>
+<li>粗体</li>
+<li>斜体</li>
+<li>无序列表</li>
+<li>有序列表</li>
+<li>链接</li>
+<li>图片</li>
+<li>文本引用</li>
+<li>行内代码引用</li>
+<li>多行代码引用</li>
+<li>表格</li>
+</ul>
+<h3 id="Markdown-相关插件"><a href="#Markdown-相关插件" class="headerlink" title="Markdown 相关插件"></a>Markdown 相关插件</h3><ul>
+<li>Sublime<ul>
+<li>MarkdownEditing</li>
+<li>MarkdownPreview</li>
+</ul>
+</li>
+</ul>
+<h3 id="Markdown-使用场景"><a href="#Markdown-使用场景" class="headerlink" title="Markdown 使用场景"></a>Markdown 使用场景</h3><ul>
+<li>学习笔记</li>
+<li>演讲稿<ul>
+<li>中午演讲：以后都做一个PPT或者写一个 Markdown 演讲稿</li>
+</ul>
+</li>
+<li>写书（侧重于技术相关的内容非常适合）</li>
+<li>个人笔记</li>
+<li>文章博客</li>
+<li>教学讲义</li>
+<li>说明文档</li>
+<li>电子邮件</li>
+</ul>
+<p>只要有写作的地方，都可以使用 Markdown 来书写。</p>
+<h3 id="用-Markdown-写一封漂亮的电子邮件"><a href="#用-Markdown-写一封漂亮的电子邮件" class="headerlink" title="用 Markdown 写一封漂亮的电子邮件"></a>用 Markdown 写一封漂亮的电子邮件</h3><p>为什么要用 Markdown 写电子邮件？ 答案是：<code>装x</code>。</p>
+<p>当然不是了，Markdown 本身语法简单，使用 Markdown 写出来的内容结构也非常清晰，<br>有助于协作沟通，总而言之，使用 Markdown 可以可以让你更加专注写作本身。</p>
+<p>其实就是讲md格式字符串转换成html而已，这里使用一个 Chrome 插件：</p>
+<p><a href="https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa?utm_source=chrome-ntp-icon" target="_blank" rel="external">Markdown Here</a></p>
+<h3 id="使用-GitBook-制作电子书"><a href="#使用-GitBook-制作电子书" class="headerlink" title="使用 GitBook 制作电子书"></a>使用 GitBook 制作电子书</h3><p><a href="https://www.gitbook.com/" target="_blank" rel="external">GitBook</a></p>
+<h3 id="自己动手做一个-Markdown-实时预览编辑器"><a href="#自己动手做一个-Markdown-实时预览编辑器" class="headerlink" title="自己动手做一个 Markdown 实时预览编辑器"></a>自己动手做一个 Markdown 实时预览编辑器</h3><p>Markdown 本身就是一个标记语言，可以通过某种方式转换成别的文本格式，本质上转换的过程其实就是做正则解析替换。</p>
+<ul>
+<li>如何将markdown格式字符串转成html<ul>
+<li>使用一个第三方包：marked</li>
+</ul>
+</li>
+<li>给html设置样式</li>
+<li>给代码块设置颜色高亮<ul>
+<li><a href="https://highlightjs.org/" target="_blank" rel="external">highlightjs</a></li>
+<li>自己动手看文档尝试一下如何加上代码高亮</li>
+</ul>
+</li>
+</ul>
+<h3 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h3><ul>
+<li><a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">https://zh.wikipedia.org/wiki/Markdown</a></li>
+<li><a href="http://www.jianshu.com/p/q81RER" target="_blank" rel="external">http://www.jianshu.com/p/q81RER</a></li>
+<li><a href="http://wowubuntu.com/markdown/" target="_blank" rel="external">http://wowubuntu.com/markdown/</a></li>
+<li><a href="http://www.jianshu.com/p/PpDNMG" target="_blank" rel="external">http://www.jianshu.com/p/PpDNMG</a></li>
+<li><a href="http://www.jianshu.com/p/qqGjLN" target="_blank" rel="external">http://www.jianshu.com/p/qqGjLN</a></li>
+<li><a href="https://www.zhihu.com/question/20409634" target="_blank" rel="external">https://www.zhihu.com/question/20409634</a></li>
+<li><a href="http://www.markdown.cn/" target="_blank" rel="external">http://www.markdown.cn/</a></li>
+</ul>
+<hr>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><blockquote>
+<p>了解版本管理概念以及集中式和分布式版本管理</p>
+</blockquote>
+<p>在介绍什么是版本控制之前，咱们先来看两个问题：</p>
+<h3 id="问题1：历史记录"><a href="#问题1：历史记录" class="headerlink" title="问题1：历史记录"></a>问题1：历史记录</h3><p>如果你用Microsoft Word写过长篇大论，那你一定有这样的经历：</p>
+<p>想删除一个段落，又怕将来想恢复找不回来怎么办？</p>
+<p>有办法，先把当前文件“另存为……”一个新的Word文件，再接着改，</p>
+<p>改到一定程度，再“另存为……”一个新文件，这样一直改下去，最后你的Word文档变成了这样：</p>
+<p><img src="img/word.jpg" alt="版本管理 - word"></p>
+<p>过了一周，你想找回被删除的文字，但是已经记不清删除前保存在哪个文件里了，只好一个一个文件去找，真麻烦。</p>
+<p>看着一堆乱七八糟的文件，想保留最新的一个，然后把其他的删掉，又怕哪天会用上，还不敢删，真郁闷。</p>
+<h3 id="问题2：多人协作"><a href="#问题2：多人协作" class="headerlink" title="问题2：多人协作"></a>问题2：多人协作</h3><p>更要命的是，有些部分需要你的财务同事帮助填写，<br>于是你把文件Copy到U盘里给她（也可能通过Email发送一份给她），<br>然后，你继续修改Word文件。<br>一天后，同事再把Word文件传给你，此时，你必须想想，<br>发给她之后到你收到她的文件期间，你作了哪些改动，得把你的改动和她的部分合并，真困难。</p>
+<h3 id="解决问题：软件"><a href="#解决问题：软件" class="headerlink" title="解决问题：软件"></a>解决问题：软件</h3><p>于是你想，如果有一个软件，不但能自动帮我记录每次文件的改动，还可以让同事协作编辑，<br>这样就不用自己管理一堆类似的文件了，也不需要把文件传来传去。<br>如果想查看某次改动，只需要在软件里瞄一眼就可以，岂不是很方便？</p>
+<p>这个软件用起来就应该像这个样子，能记录每次文件的改动：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">版本  用户  说明                   日期</div><div class="line">1     张三  删除了软件服务条款5    7/12 10:38</div><div class="line">2     张三  增加了License人数限制  7/12 18:09</div><div class="line">3     李四  财务部门调整了合同金额 7/13 9:51</div><div class="line">4     张三  延长了免费升级周期     7/14 15:17</div></pre></td></tr></table></figure>
+<p>这样，你就结束了手动管理多个“版本”的史前时代，进入到版本控制的20世纪。</p>
+<h3 id="那什么是版本控制呢？"><a href="#那什么是版本控制呢？" class="headerlink" title="那什么是版本控制呢？"></a>那什么是版本控制呢？</h3><p>版本管理就是管理更新的历史记录，<br>它给我们提供了一些在软件开发过程中必不可少的功能，例如：</p>
+<ul>
+<li>记录一款软件添加或更改源代码的过程</li>
+<li>回滚到特定阶段，恢复误删除的文件</li>
+<li>合并多人协作的文件等</li>
+</ul>
+<h3 id="版本管理分类"><a href="#版本管理分类" class="headerlink" title="版本管理分类"></a>版本管理分类</h3><p>版本管理分为集中式版本管理和分布式版本管理，这两种方式有什么差异，我们接下来一一介绍。</p>
+<h2 id="集中式版本控制-SVN"><a href="#集中式版本控制-SVN" class="headerlink" title="集中式版本控制 - SVN"></a>集中式版本控制 - SVN</h2><p>SVN 全称 Apache Subversion，是一个开放源代码的集中式版本管理系统。<br>在 2000 年由 CollabNet 开发，现已发展成为 Apache 软件基金会的一个项目。</p>
+<h3 id="集中式：SVN"><a href="#集中式：SVN" class="headerlink" title="集中式：SVN"></a>集中式：SVN</h3><p>早期的版本管理就是以 <code>Apache Subversion</code> 为代表的集中式版本管理，<br>如下图所示将仓库集中存放在服务器之中，所以只有一个仓库。<br>这就是为什么这种版本管理系统会被称作集中式版本管理。</p>
+<p><img src="img/svn.png" alt="集中式版本管理 - SVN"></p>
+<p>集中式版本管理将所有的数据集中存放在服务器中，这是有便于统一管理的优点。</p>
+<p>但是一旦开发者所处的环境不能连接服务器，就无法获取最新源代码，开发也就无法进行。</p>
+<p>服务器宕机时也是同样的道理，而且万一服务器故障导致数据丢失，<br>恐怕开发者就再也见不到最新的源代码了。</p>
+<p>简而言之：</p>
+<ul>
+<li>中央服务器好比是一个图书馆</li>
+<li>你要改一本书，必须先从图书馆借出来（checkout）</li>
+<li>然后回到家自己改，改完了，再放到图书馆（commit）</li>
+</ul>
+<h3 id="一些术语"><a href="#一些术语" class="headerlink" title="一些术语"></a>一些术语</h3><ul>
+<li>源代码库（repository）：源代码统一存放的地方</li>
+<li>检出（checkout）：当你手上没有源代码的时候，就需要从 responsive checkout 一份</li>
+<li>提交（commit）：当你已经修改了代码，就需要 commit 到 repository</li>
+<li>更新（update）：当你已经 checkout 了一份源代码，Update 一下就可以和 repository 上的源代码同步，你手上的代码就会有最新的变更</li>
+</ul>
+<h3 id="使用-VisualSVN-搭建-SVN-服务器"><a href="#使用-VisualSVN-搭建-SVN-服务器" class="headerlink" title="使用 VisualSVN 搭建 SVN 服务器"></a>使用 VisualSVN 搭建 SVN 服务器</h3><p><a href="https://www.visualsvn.com/" target="_blank" rel="external"><img src="img/visualsvn.jpg" alt="VisualSVN"></a></p>
+<p>SVN 服务器：运行 Subversion 服务的计算机。</p>
+<p>SVN服务器分为命令行工具和图形化工具，<br>为了方便，我们这里使用比较流行的图形化工具 <a href="https://www.visualsvn.com/" target="_blank" rel="external">VisualSVN</a></p>
+<p>安装完毕之后，基本使用流程如下：</p>
+<ul>
+<li>创建用户或组</li>
+<li>创建版本仓库</li>
+<li>设定用户权限</li>
+</ul>
+<h3 id="使用-TortoiseSVN-作为-SVN-客户端"><a href="#使用-TortoiseSVN-作为-SVN-客户端" class="headerlink" title="使用 TortoiseSVN 作为 SVN 客户端"></a>使用 TortoiseSVN 作为 SVN 客户端</h3><p><a href="https://tortoisesvn.net/" target="_blank" rel="external"><img src="img/tortoisesvn.png" alt="TortoiseSVN"></a></p>
+<p>SVN 客户端：用户通过SVN客户端同SVN服务器交互</p>
+<p>SVN 客户端也分为命令行工具和图形化工具，这里我们使用最流行的 <a href="https://tortoisesvn.net/" target="_blank" rel="external">TortoiseSVN</a></p>
+<h3 id="TortoiseSVN-客户端基本操作流程"><a href="#TortoiseSVN-客户端基本操作流程" class="headerlink" title="TortoiseSVN 客户端基本操作流程"></a>TortoiseSVN 客户端基本操作流程</h3><ul>
+<li>检出项目：checkout</li>
+<li>增加文件或目录：add（增加），commit（提交）</li>
+<li>修改文件或目录：commit（提交）</li>
+<li>删除文件或目录：commit（提交）</li>
+<li>更新文件或目录：update（更新）</li>
+<li>查看版本日志：log（日志）</li>
+</ul>
+<h3 id="关于冲突"><a href="#关于冲突" class="headerlink" title="关于冲突"></a>关于冲突</h3><p>多人协作时，同个目录或同个文件需要不同成员共同开发，<br>这个时候 commit 和 update 就可能出现冲突。</p>
+<ul>
+<li>两个程序员只要不是修改了同一行程序，SVN 可以通过 update 自动合并修改</li>
+<li>但是如果两个程序员修改了同一行程序， SVN 会提示文件 conflict，需要手动确定</li>
+</ul>
+<p>如何解决？</p>
+<p>第一种解决方法：手动合并冲突的内容</p>
+<p>第二种解决方法：每次修改某个文件的时候对文件上锁，这样你在修改的过程中别人就无法更新这个文件</p>
+<p>建议：</p>
+<ul>
+<li>多跟团队成员沟通</li>
+<li>不要随便去修改别人的文件</li>
+<li>一个文件最好同一时间只被一个人修改更新</li>
+</ul>
+<h3 id="版本管理使用建议"><a href="#版本管理使用建议" class="headerlink" title="版本管理使用建议"></a>版本管理使用建议</h3><ul>
+<li>不要频繁的提交版本</li>
+<li>每次 commit 之前或之后都要 update</li>
+<li>每次 commit 的时候都要写提交日志</li>
+</ul>
+<hr>
+<h2 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h2><p><img src="img/hack.jpg" alt="黑客帝国"></p>
+<p>在电影中一个“超级黑客”坐在电脑前，从不摸一下鼠标，<br>就能够在 30 秒内侵入到超安全的军事计算机中。<br>这是因为电影制片人意识到，<br>作为人类，本能地知道让计算机圆满完成工作的唯一途径，是用键盘来操纵计算机。</p>
+<h3 id="GUI-VS-CLI"><a href="#GUI-VS-CLI" class="headerlink" title="GUI VS CLI"></a>GUI VS CLI</h3><p>现在，大多数的计算机用户只是熟悉图形用户界面（GUI），并且产品供应商和此领域的学<br>者会灌输给用户这样的思想，命令行界面（CLI）是过去使用的一种很恐怖的东西。这就很不<br>幸，因为一个好的命令行界面，是用来和计算机进行交流沟通的非常有效的方式，正像人类社<br>会使用文字互通信息一样。人们说， <strong>图形用户界面让简单的任务更容易完成，而命令行界面<br>使完成复杂的任务成为可能</strong> ，到现在这句话仍然很正确。</p>
+<h3 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h3><p>一说到命令行，其实真正指的是 <code>shell</code>。</p>
+<p><strong>shell 就是一个程序，它接受从键盘输入的命令，然后把命令传递给操作系统去执行。</strong></p>
+<p>几乎所有的 Linux 发行版都提供一个名为 <code>bash</code> 的 shell 程序。<br>bash 是 <code>Bourne Again SHell</code> 的首字母缩写，所指的是这样一个事实。</p>
+<p><img src="img/shell.jpg" alt="shell"></p>
+<h3 id="终端仿真器"><a href="#终端仿真器" class="headerlink" title="终端仿真器"></a>终端仿真器</h3><p>当使用图形用户界面时，我们需要另一个和 shell 交互的叫做终端仿真器的程序。<br>在 Windows 上，一般使用操作系统自带的 <code>cmd</code> 或者 <code>powershell</code>。<br>在 Linux 上，如果是图形用户界面，那么可以使用 <code>terminal</code> 或者 <code>konsole</code>、<code>gnome-terminal</code> 之类<br>的终端仿真器，但基本上，它们都完成同样的事情，让我们能访问 shell，<br>你可能会因为附加的一些花俏功能而喜欢上某个终端。</p>
+<p>关于名字，如果有人提到：控制台、终端、bash、shell、terminal 等，一般都是指上面这些。</p>
+<h3 id="安装-Git-for-Windows-客户端体验-shell"><a href="#安装-Git-for-Windows-客户端体验-shell" class="headerlink" title="安装 Git for Windows 客户端体验 shell"></a>安装 Git for Windows 客户端体验 shell</h3><p>注意：虽然在 Windows 上可以通过 cmd 或 powershell 体验终端的使用，<br>但是学习终端最正确的方式是学习 Linux 上的命令行，要更纯正，更强大。</p>
+<p>所以，我们这里通过使用 Git for Windows 客户端（自带了一个 bash）可以供我们学习 shell。</p>
+<h3 id="打开和退出终端"><a href="#打开和退出终端" class="headerlink" title="打开和退出终端"></a>打开和退出终端</h3><h3 id="使用终端操作文件系统"><a href="#使用终端操作文件系统" class="headerlink" title="使用终端操作文件系统"></a>使用终端操作文件系统</h3><ul>
+<li>绝对路径和相对路径</li>
+<li>pwd（print working directory）</li>
+<li>cd（change directory）<ul>
+<li>切换到指定路径（相对路径或绝对路径）</li>
+</ul>
+</li>
+<li>ls（list files）<ul>
+<li><code>ls</code> 列出当前目录文件</li>
+<li><code>ls 目录路径</code> 列出指定路径文件</li>
+<li><code>ls -a</code> 列出文件并显示隐藏文件或目录</li>
+</ul>
+</li>
+<li>cp（copy）<ul>
+<li><code>cp 源路径 目标路径</code></li>
+<li>cp 在复制目录的时候，不会复制里面的子文件或子目录</li>
+<li>-r （recursive）递归复制</li>
+</ul>
+</li>
+<li>mv（move）：移动文件或者目录，还可以重命名文件或目录</li>
+<li>mkdir（make directory）：创建目录</li>
+<li>rm（remove）：删除文件或目录<ul>
+<li>-r 递归删除：直接将整个目录包括里面的内容都删掉</li>
+</ul>
+</li>
+<li>clear：清屏</li>
+<li>touch 创建文件</li>
+<li>cat 查看文本文件</li>
+</ul>
+<p>案例：命令综合练习</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">1. 在桌面下创建一个叫做 `itcast` 的目录</div><div class="line">2. 在 itcast 目录下，分别创建 `dir1` 和 `dir2` 两个子目录</div><div class="line">3. 复制 `code/scripts/main.js` 文件到 `itcast` 目录中</div><div class="line">4. 复制 `code` 目录下的 `js` 目录到 `itcast` 目录中</div><div class="line">5. 将 `itcast/main.js` 文件重命名为 `main-main.js`</div><div class="line">6. 将 `main-main.js` 文件移动到 dir1 中</div><div class="line">7. 将 `dir1` 中的 `main-main.js` 文件移动到 dir2 中</div><div class="line">8. 将 `itcast/js` 目录删除</div></pre></td></tr></table></figure>
+<p>以后多使用，就会越用越熟。</p>
+<h3 id="使用-less-命令浏览文件内容"><a href="#使用-less-命令浏览文件内容" class="headerlink" title="使用 less 命令浏览文件内容"></a>使用 less 命令浏览文件内容</h3><p>less 命令是一个用来浏览文本文件的程序。</p>
+<p>less 命令是这样使用的：<code>less 文本文件名</code></p>
+<p>一旦 less 程序运行起来，我们就能浏览文件内容了。<br>如果文件内容多于一页，那么我们可以上下滚动文件。按下 <code>q</code> 键，退出 less 程序。</p>
+<p>下表列出了 less 程序最常使用的键盘命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">命令               行为</div><div class="line">h                  显示帮助屏幕</div><div class="line">Page UP or b       向上翻滚一页</div><div class="line">Page Down or space 向下翻滚一页</div><div class="line">UP Arrow           向上翻滚一行</div><div class="line">Down Arrow         向下翻滚一行</div><div class="line">G                  移动到最后一行</div><div class="line">g                  移动到开头一行</div><div class="line">/charaters         向前查找指定的字符串</div><div class="line">n                  向前查找下一个出现的字符串，这个字符串是之前所指定查找的</div><div class="line">q                  退出 less 程序</div></pre></td></tr></table></figure>
+<h2 id="文本编辑器-vi"><a href="#文本编辑器-vi" class="headerlink" title="文本编辑器 - vi"></a>文本编辑器 - vi</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>vi 全称 visual interface</p>
+<ul>
+<li>可视化接口</li>
+<li>类似 Windows 中的记事本（notepad）</li>
+<li>vi 相对于 notepad 强大的不是一星半点</li>
+</ul>
+<p><img src="img/vim.gif" alt="VI编辑器"></p>
+<p>学习 Linux 命令行，就像要成为一名造诣很深的钢琴家一样，它不是我们一下午就能学会<br>的技能。这需要经历几年的勤苦练习。</p>
+<p>vi 因它难用的用户界面而有点声名狼藉，但是当我们<br>看到一位大师坐在钢琴前开始演奏时，我们的确成了伟大艺术的见证人。虽然我们在这里不能<br>成为 vi 大师，但是已经可以为大家开启另一个折腾的世界了。</p>
+<h3 id="为什么学习-vi"><a href="#为什么学习-vi" class="headerlink" title="为什么学习 vi"></a>为什么学习 vi</h3><ul>
+<li>装x，高端大气上档气</li>
+<li>丢掉鼠标，提高效率<ul>
+<li>当一名熟练的 vi 用户在编辑文件时，他/她 的手从不需要移开键盘</li>
+<li>再结合一个青轴的机械键盘，尽管噼里啪啦的敲你的键盘即可</li>
+</ul>
+</li>
+<li>很多系统都预装<ul>
+<li>Linux、Mac</li>
+</ul>
+</li>
+<li>轻量级而且执行速度快<ul>
+<li>vi 是为了加快输入速度而设计的，没有图形界面</li>
+</ul>
+</li>
+<li>不希望其它 Linux 和 Unix 用户把我们当做胆小鬼</li>
+</ul>
+<p>好吧，可能第一点才是最重要的。</p>
+<h3 id="vi-的背景介绍"><a href="#vi-的背景介绍" class="headerlink" title="vi 的背景介绍"></a>vi 的背景介绍</h3><p>第一版 vi 是在 1976 由 <code>Bill Joy</code> 写成的，当时他是加州大学伯克利分校的学生，后来他共<br>同创建了 Sun 微系统公司。vi 这个名字来源于单词 <code>visual</code> ，因为它打算在带有可移动光标<br>的视频终端上编辑文本。在发明可视化编辑器之前，有一次只能操作一行文本的行编辑器。为<br>了指定一个修改，我们告诉行编辑器到一个特殊行并且说明做什么修改，比方说添加或删除文<br>本。视频终端（而不是基于打印机的终端，像电传打印机）的出现，可视化编辑成为可能。vi<br>实际上整合了一个强大的叫做 ex 行编辑器, 所以我们在使用 vi 时能运行行编辑命令。<br>大多数 Linux 发行版不包含真正的 vi；而是自带一款高级替代版本，叫做 <code>vim</code>（它是“vi<br>improved”的简写）由 <code>Bram Moolenaar</code> 开发的。vim 相对于传统的 Unix vi 来说，取得了实<br>质性进步。通常，vim 在 Linux 系统中是“vi”的符号链接（或别名）。在随后的介绍中，我们<br>将会假定我们有一个叫做“vi”的程序，但它其实是 vim。</p>
+<h3 id="启动和停止-vi"><a href="#启动和停止-vi" class="headerlink" title="启动和停止 vi"></a>启动和停止 vi</h3><ul>
+<li><code>vi</code> 启动 vi</li>
+<li><code>:q</code> 退出 vi</li>
+<li><code>:q!</code> 强制退出</li>
+</ul>
+<p>如果你在 vi 中“迷失”了，试着按下 Esc 键两次来找到路（回到普通模式），<br>再通过 <code>:q</code> 退出。</p>
+<h3 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h3><h4 id="创建新文件-编辑已有文件"><a href="#创建新文件-编辑已有文件" class="headerlink" title="创建新文件/编辑已有文件"></a>创建新文件/编辑已有文件</h4><ul>
+<li><code>vi 文件名</code> 创建新文件</li>
+<li><code>vi 文件名</code> 编辑已有文件</li>
+</ul>
+<p>注：每行开头的波浪号 <code>~</code> 指示那一行不存在文本。这表示我们有一个空文件。还没有输入<br>任何字符。</p>
+<p>学习 vi 时，要知道的第二件非常重要的事情是（知道了如何退出 vi 后）vi 是一个模式编<br>辑器。当 vi 启动后，进入的是命令模式。这种模式下，几乎每个按键都是一个命令，所以如果<br>我们打算输入字符，vi 会发疯，弄得一团糟。</p>
+<h4 id="插入模式"><a href="#插入模式" class="headerlink" title="插入模式"></a>插入模式</h4><p>为了在文件中添加文本，首先我们必须进入插入模式。按下 “i” 按键进入插入模式。之后，<br>我们应该在屏幕底部看到下面一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-- INSERT --</div></pre></td></tr></table></figure>
+<p>接来下就可以输入编辑文本内容了，例如这里输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hello world</div></pre></td></tr></table></figure>
+<p>输入完毕之后，按下 ESC 键，退出插入模式并返回命令模式。</p>
+<h4 id="保存工作"><a href="#保存工作" class="headerlink" title="保存工作"></a>保存工作</h4><ul>
+<li><code>:w</code>  保存</li>
+<li><code>:wq</code> 保存并退出</li>
+<li><code>ZZ</code> 保存并退出</li>
+<li><code>:w 文件名</code> 指定可选文件名，类似于 文件另存为</li>
+</ul>
+<h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><p>当在 vi 命令模式下时，vi 提供了大量的移动命令，其中一些是与 less 阅读器共享的。这里<br>列举了一些：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">按键        移动光标</div><div class="line">l or 右箭头 向右移动一个字符</div><div class="line">h or 左箭头 向左移动一个字符</div><div class="line">j or 下箭头 向下移动一行</div><div class="line">k or 上箭头 向上移动一行</div><div class="line">0 (零按键)  移动到当前行的行首。</div><div class="line">ˆ           移动到当前行的第一个非空字符。</div><div class="line">$           移动到当前行的末尾。</div><div class="line">w           移动到下一个单词或标点符号的开头。</div><div class="line">W           移动到下一个单词的开头，忽略标点符号。</div><div class="line">b           移动到上一个单词或标点符号的开头。</div><div class="line">B           移动到上一个单词的开头，忽略标点符号。</div><div class="line">Ctrl-f or Page Down 向下翻一页</div><div class="line">Ctrl-b or Page Up   向上翻一页</div><div class="line">numberG 移动到第 number 行。例如，1G 移动到文件的</div><div class="line">第一行。</div><div class="line">G 移动到文件末尾。</div></pre></td></tr></table></figure>
+<p>为什么 h，j，k，和 l 按键被用来移动光标呢？因为在开发 vi 之初，并不是所有的视频终<br>端都有箭头按键，熟练的打字员可以使用规则的键盘按键来移动光标，他们的手从不需要移开<br>键盘。</p>
+<h3 id="基本编辑"><a href="#基本编辑" class="headerlink" title="基本编辑"></a>基本编辑</h3><ul>
+<li><code>a</code> 越过行尾，进入插入模式</li>
+<li><code>A</code> 直接移动到当前行末尾，进入插入模式</li>
+<li><code>o</code> 在当前行的下方打开一行，进入插入模式</li>
+<li><code>O</code> 在当前行的上方打开一行，进入插入模式</li>
+</ul>
+<h4 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h4><ul>
+<li><code>u</code> 撤销最后一次的修改</li>
+<li><code>Ctrl + r</code> 恢复上一步被撤销操作</li>
+</ul>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><ul>
+<li><code>x</code>    删除当前字符</li>
+<li><code>3x</code>   删除当前字符及其后的两个字符</li>
+<li><code>dd</code>   删除当前行</li>
+<li><code>5dd</code>  当前行及随后的四行文本</li>
+<li><code>dW</code>   从光标开始位置到下一个单词的开头</li>
+<li><code>d$</code>   从光标位置开始到当前行的行尾。</li>
+<li><code>d0</code>   从光标位置开始到当前行的行首。</li>
+<li><code>dˆ</code>   从光标位置开始到文本行的第一个非空字符。</li>
+<li><code>dG</code>   从当前行到文件的末尾。</li>
+<li><code>d20G</code> 从当前行到文件的第 20 行。</li>
+</ul>
+<h4 id="粘贴"><a href="#粘贴" class="headerlink" title="粘贴"></a>粘贴</h4><p>d 命令不仅删除文本，它还“剪切”文本。每次我们使用 d 命令，删除的部分被复制<br>到一个粘贴缓冲区中（看作剪切板）。</p>
+<ul>
+<li><code>p</code> 将剪切板中的文本粘贴到光标位置之后</li>
+<li><code>P</code> 将文本粘贴到光标之前</li>
+</ul>
+<h4 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h4><ul>
+<li><code>yy</code>    当前行。</li>
+<li><code>5yy</code>   当前行及随后的四行文本。</li>
+<li><code>yW</code>    从当前光标位置到下一个单词的开头。</li>
+<li><code>y$</code>    从当前光标位置到当前行的末尾。</li>
+<li><code>y0</code>    从当前光标位置到行首。</li>
+<li><code>yˆ</code>    从当前光标位置到文本行的第一个非空字符。</li>
+<li><code>yG</code>    从当前行到文件末尾。</li>
+<li><code>y20G</code>  从当前行到文件的第 20 行。</li>
+</ul>
+<h4 id="连接行"><a href="#连接行" class="headerlink" title="连接行"></a>连接行</h4><ul>
+<li><code>J</code>   把行与行之间连接起来</li>
+</ul>
+<h3 id="查找和替换"><a href="#查找和替换" class="headerlink" title="查找和替换"></a>查找和替换</h3><h4 id="查找一行"><a href="#查找一行" class="headerlink" title="查找一行"></a>查找一行</h4><ul>
+<li><code>f要查找的字符</code><ul>
+<li>通过输入分号查找当前行下一个</li>
+</ul>
+</li>
+</ul>
+<h4 id="查找整个文件"><a href="#查找整个文件" class="headerlink" title="查找整个文件"></a>查找整个文件</h4><ul>
+<li><code>/要查找的字符</code> 回车查找<ul>
+<li>输入 n 查找下一个</li>
+</ul>
+</li>
+</ul>
+<h4 id="全局查找和替换"><a href="#全局查找和替换" class="headerlink" title="全局查找和替换"></a>全局查找和替换</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:%s/hello/Hello/g</div></pre></td></tr></table></figure>
+<p><code>%</code> 是一个快捷方式，表示从第一行到最后一行</p>
+<p><code>s</code> 指定操作。在这种情况下是，替换（查找与替代）。</p>
+<p><code>/hello/Hello</code> 查找类型与替代文本</p>
+<p><code>g</code> 表示“全局”的意思，意味着对文本行中所有匹配的字符串执行查找和替换操作。<br>如果省略 g，则只替换每个文本行中第一个匹配的字符串。</p>
+<h3 id="编辑多个文件"><a href="#编辑多个文件" class="headerlink" title="编辑多个文件"></a>编辑多个文件</h3><p>过 vi，我们可以打开多个文件来编辑，只要在命令行中指定要编辑的文件名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi file1 file2 file3...</div></pre></td></tr></table></figure>
+<p><code>:buffers</code> 查看正在编辑的文件列表。</p>
+<h4 id="文件之间跳转"><a href="#文件之间跳转" class="headerlink" title="文件之间跳转"></a>文件之间跳转</h4><p>从当前文件切换到下一个文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:n</div></pre></td></tr></table></figure>
+<p>回到先前的文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:N</div></pre></td></tr></table></figure>
+<p>根据文件编号切换到指定文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:buffer 编号</div></pre></td></tr></table></figure>
+<h2 id="分布式版本控制-Git"><a href="#分布式版本控制-Git" class="headerlink" title="分布式版本控制 - Git"></a>分布式版本控制 - Git</h2><h3 id="分布式版本管理概念"><a href="#分布式版本管理概念" class="headerlink" title="分布式版本管理概念"></a>分布式版本管理概念</h3><h3 id="Linus-Benedict-Torvalds"><a href="#Linus-Benedict-Torvalds" class="headerlink" title="Linus Benedict Torvalds"></a>Linus Benedict Torvalds</h3><p><a href="https://zh.wikipedia.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9" target="_blank" rel="external">Linus Benedict Torvalds</a></p>
+<h3 id="git-诞生历史"><a href="#git-诞生历史" class="headerlink" title="git 诞生历史"></a>git 诞生历史</h3><h3 id="安装-git-环境"><a href="#安装-git-环境" class="headerlink" title="安装 git 环境"></a>安装 git 环境</h3><h3 id="初始设置"><a href="#初始设置" class="headerlink" title="初始设置"></a>初始设置</h3><h3 id="简单操作"><a href="#简单操作" class="headerlink" title="简单操作"></a>简单操作</h3><ul>
+<li><code>git init</code></li>
+<li><code>git status</code></li>
+<li><code>git add</code></li>
+<li><code>git commit</code></li>
+<li><code>git log</code></li>
+</ul>
+<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><ul>
+<li><code>git branch</code> 查看当前分支列表</li>
+<li><code>git branch 分支名称</code> 创建分支</li>
+<li><code>git checkout 分支名称</code> 切换到指定分支</li>
+<li><code>git checkout -b 分支名称</code> 创建分支并切换到该分支</li>
+<li><code>git checkout -</code> 切换回上一个分支</li>
+<li><code>git merge 分支名称</code> 合并分支<ul>
+<li>注意：要先切换回主分支</li>
+</ul>
+</li>
+<li><code>git merge --no-ff 分支名称</code> 合并提交</li>
+<li><p><code>git log --graph</code> 以图表形式查看日志</p>
+</li>
+<li><p>master 分支是 git 默认创建的分支，基本上所有分支都是以这个分支为中心进行的</p>
+</li>
+<li>不同分支中，可以同时进行完全不同的开发，各个分支之间不会相互影响彼此</li>
+<li>等分支的开发完成后再与 master 分支进行合并<ul>
+<li>master 也叫作主干分支，是所有分支的原点，同时也是合并的终点</li>
+</ul>
+</li>
+<li>通过灵活运用分支，可以让多人同时高效的进行并行开发</li>
+</ul>
+<h3 id="更改提交"><a href="#更改提交" class="headerlink" title="更改提交"></a>更改提交</h3><ul>
+<li><code>git reset --hard 提交哈希值</code> 根据提交哈希值回溯到历史版本</li>
+<li><code>git reflog</code> 查看当前仓库操作日志</li>
+<li><code>git commit --amend</code> 修改提交信息</li>
+</ul>
+<h2 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h2><p>Name: <code>李鹏周</code></p>
+<p>Editor: <code>Sublime</code></p>
+<p>Note: <code>Markdown</code></p>
+<p>Code-Style: <a href="http://standardjs.com/" target="_blank" rel="external">JavaScript Standard Style</a></p>
+<p>Course: <code>Tools &amp; AngularJS</code></p>
+<p>Let’s start a happy journey of programming. <code>^_^</code></p>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><ul>
+<li><p>Visual Studio Code</p>
+<ul>
+<li>基于 Electron 技术构建的一个跨平台桌面 APP 编辑器</li>
+<li>有强大的插件支持</li>
+</ul>
+</li>
+<li><p>演讲主题</p>
+<ul>
+<li>why 抛出用户的痛点</li>
+<li>what 说你的产品是什么</li>
+<li>how 如何使用的你的产品解决痛点</li>
+<li>when 什么时候用</li>
+<li>where 在哪儿用</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/09/git使用指南/" data-id="ciu2pltl70000f0hqp8h50dnm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/10/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/09/git使用指南/">git使用指南</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/09/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
