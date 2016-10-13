@@ -1,280 +1,2000 @@
-
-
-
-
-
-
-
-<!doctype html>
-<html lang="">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   
-  <meta name="author" content="John Doe">
+  <title>个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="个人博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="个人博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="个人博客">
   
-  
-  
-  
-    <meta name="description" content="">
-  
-  <title> [ 马达个人博客 ]</title>
-  
-  
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
   
-  <link rel="stylesheet" href="/css/random.css">
-<link rel="stylesheet" href="/css/vegas.min.css">
-<link rel="stylesheet" href="/css/highlight-railscasts.css">
-<link rel="stylesheet" href="/css/jquery.fancybox.css">
-<link rel="stylesheet" href="/css/iconfont/iconfont.css">
-<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
-<link rel="stylesheet" href="/css/plyr.css">
+    <link rel="icon" href="/img/favicon.png">
   
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    
+    
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: true,
+          isPost: false,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
 </head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
 
-<div class="random-center hide-area">
-  <div id="random-index">
-    <div class="center-field">
-      <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg" width=120 height=120 onClick="openUserCard()">
-    </div>
-    <div class="center-field">
-      <div class="title" onClick="openUserCard()">马达个人博客</div>
-      <div class="sub-title" onClick="openUserCard()"></div>
-    </div>
-    <hr >
-    <div class="center-field">
-      <ul class="index-nav-link">
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Ma Da</a></h1>
+        </hgroup>
+
         
         
-          
-            <li><a href="/index.html">Home</a></li>
-          
         
-          
-            <li><a href="/archives">Archives</a></li>
-          
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
         
-          
-            <li><a href="/tags">Tags</a></li>
-          
-        
-          
-            <li><a href="/categories">Categories</a></li>
-          
-        
-          
-            <li><a href="/about">About</a></li>
-          
-        
-          
-            <li><a href="https://github.com/stiekel/hexo-theme-random">Github</a></li>
-          
-        
-      </ul>
-      <ul class="social-icon">
-  
-  
-    <li>
-      <a href="https://github.com/stiekel/hexo-theme-random">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://coding.net/u/Stiekel">
-        
-          <i class="icon iconfont coding">&#xe607;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://twitter.com/SidCN">
-        
-          <i class="icon iconfont twitter">&#xe600;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://weibo.com/sidcn">
-        
-          <i class="icon iconfont weibo">&#xe602;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.douban.com/people/Stiekel/">
-        
-          <i class="icon iconfont douban">&#xe60f;</i>
-        
-      </a>
-    </li>
-  
-</ul>
-    </div>
-  </div>
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">爱登山、爱社交、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
 </div>
-<div id="user-card">
-  <div class="center-field">
-    <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg">
-    <p id="description"></p>
-    <ul class="social-icon">
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Ma Da</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Ma Da</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap">
   
+    <article id="post-学习内容3" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <li>
-      <a href="https://github.com/stiekel/hexo-theme-random">
-        
-          <i class="icon iconfont github">&#xe606;</i>
-        
-      </a>
-    </li>
+    <div class="article-meta">
+      <a href="/2014/10/10/学习内容3/" class="article-date">
+      <time datetime="2014-10-09T16:21:47.000Z" itemprop="datePublished">2014-10-10</time>
+</a>
+    </div>
   
-    <li>
-      <a href="https://coding.net/u/Stiekel">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-          <i class="icon iconfont coding">&#xe607;</i>
-        
-      </a>
-    </li>
   
-    <li>
-      <a href="https://twitter.com/SidCN">
-        
-          <i class="icon iconfont twitter">&#xe600;</i>
-        
-      </a>
-    </li>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/10/10/学习内容3/">学习内容3</a>
+    </h1>
   
-    <li>
-      <a href="http://weibo.com/sidcn">
-        
-          <i class="icon iconfont weibo">&#xe602;</i>
-        
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.douban.com/people/Stiekel/">
-        
-          <i class="icon iconfont douban">&#xe60f;</i>
-        
-      </a>
-    </li>
-  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="流行框架笔记"><a href="#流行框架笔记" class="headerlink" title="流行框架笔记"></a>流行框架笔记</h1><hr>
+<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><ul>
+<li>Markdown</li>
+<li>SVN</li>
+<li>命令行<ul>
+<li>vi</li>
 </ul>
+</li>
+<li>Git<ul>
+<li>基本操作：init、status、add、commit、log</li>
+<li>分支操作：branch、checkout</li>
+<li>远程仓库操作：remote、clone、push、pull</li>
+<li>回滚操作：checkout</li>
+</ul>
+</li>
+<li>Github</li>
+</ul>
+<hr>
+<h2 id="Awesome"><a href="#Awesome" class="headerlink" title="Awesome"></a>Awesome</h2><p><a href="https://www.awesomes.cn/" target="_blank" rel="external">https://www.awesomes.cn/</a></p>
+<p>JavaScript 技术栈</p>
+<p>HTML、CSS、JavaScript</p>
+<p>力不从心了</p>
+<hr>
+<h2 id="开放性讨论"><a href="#开放性讨论" class="headerlink" title="开放性讨论"></a>开放性讨论</h2><ul>
+<li>为什么这两年前端行业好像突然多了那么多东西<ul>
+<li>互联网+</li>
+<li>需求</li>
+<li>Web Page VS Web Application<ul>
+<li>网站应用程序的功能越来越丰富</li>
+<li>以前的前端技术栈很简单，已经无法满足这些功能需求了</li>
+</ul>
+</li>
+<li>有一大波后台开发工程师转型前端工程师：拉高了前端行业整体技术水平</li>
+<li>这些闲着没事儿干的人，把后台的一些开发思想引到了前台</li>
+<li>无论这些技术栈再怎么变化<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>我该以什么态度学习新东西<ul>
+<li>玩玩儿的态度 just for fun</li>
+</ul>
+</li>
+<li>我该如何学习一个新东西<ul>
+<li>why、what、how、when、where</li>
+<li>官网、社区、博客、书籍</li>
+<li>能体会到这段代码的思想即可</li>
+</ul>
+</li>
+<li>什么是框架和库<ul>
+<li>框架：Bootstrap<ul>
+<li>框架一般是封装了很多繁杂的操作，提供了某种规则、约定的使用方式</li>
+<li>开发人员只需要按照框架的规则、约束、套路来写代码配置即可</li>
+</ul>
+</li>
+<li>库：jQuery<ul>
+<li>库是一般是提供了一些函数、功能API</li>
+<li>由开发者使用库提供的这些API，开发业务功能，由开发人员主动调用库里面的功能</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="AngularJS-简介"><a href="#AngularJS-简介" class="headerlink" title="AngularJS 简介"></a>AngularJS 简介</h2><p><strong>AngularJS，程序员的 angelababy</strong></p>
+<p>以下简称 ng</p>
+<h3 id="知识储备"><a href="#知识储备" class="headerlink" title="知识储备"></a>知识储备</h3><ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+<p>为了更好的学习效果，最好擅长一些 JavaScript 库，如果有后台开发经验效果最佳。</p>
+<h3 id="哪些人在用"><a href="#哪些人在用" class="headerlink" title="哪些人在用"></a>哪些人在用</h3><ul>
+<li>前端开发人员</li>
+<li>后端开发人员目前更多<ul>
+<li>前端、切图工程师</li>
+<li>UI 设计师，做PSD图，然后出 HTML 静态页</li>
+<li>后台开发人员使用 AngularJS 更多一些</li>
+<li>AngularJS Google</li>
+<li>ReactJS Facebook</li>
+<li>Vue 尤雨溪 在硅谷工作的90后</li>
+</ul>
+</li>
+</ul>
+<h3 id="什么是-AngularJS"><a href="#什么是-AngularJS" class="headerlink" title="什么是 AngularJS"></a>什么是 AngularJS</h3><ul>
+<li>一款非常优秀的前端高级 <strong>JavaScript 框架</strong>，诞生于 2009 年</li>
+<li>由 Misko Hevery 等人创建</li>
+<li>后被 Google 收购，用于其多款产品</li>
+<li>有一个全职的开发团队继续开发和维护这个库</li>
+<li>有了这一类框架就可以轻松构建 <strong>SPA 应用程序</strong><ul>
+<li>Single Page Application</li>
+</ul>
+</li>
+<li>通过 <strong>指令</strong> 扩展了 HTML，通过 <strong>表达式</strong> 绑定数据到 HTML</li>
+<li><strong>最大程度上解放了 DOM 操作</strong></li>
+<li>构建更加动感的 HTML 应用程序</li>
+</ul>
+<h3 id="关于-AngularJS-的版本"><a href="#关于-AngularJS-的版本" class="headerlink" title="关于 AngularJS 的版本"></a>关于 AngularJS 的版本</h3><ul>
+<li>AngularJS在1.2之后的版本不再支持Internet Explorer 6和7.</li>
+<li>在1.3之后的版本停止对Internet Explorer 8的支持.</li>
+<li>ng2 已经在2016年8月份正式发布了，现在公司里面用的不太多</li>
+<li>ng1 对于一些老项目还非常的多，ng1 已经在逐渐的走向没落了<ul>
+<li>ng 是第一个真正意义上把前端从刀耕火种的年代带到了工业时代</li>
+</ul>
+</li>
+</ul>
+<p>Single Page Application</p>
+<h4 id="传统的网站模型：多页面应用模型"><a href="#传统的网站模型：多页面应用模型" class="headerlink" title="传统的网站模型：多页面应用模型"></a>传统的网站模型：多页面应用模型</h4><h4 id="SPA-网站模型"><a href="#SPA-网站模型" class="headerlink" title="SPA 网站模型"></a>SPA 网站模型</h4><h4 id="网易云音乐实例解析"><a href="#网易云音乐实例解析" class="headerlink" title="网易云音乐实例解析"></a>网易云音乐实例解析</h4><ul>
+<li>网易云音乐</li>
+<li>coding</li>
+</ul>
+<h4 id="锚点的使用：找美女"><a href="#锚点的使用：找美女" class="headerlink" title="锚点的使用：找美女"></a>锚点的使用：找美女</h4><p>锚点：网页内部定位</p>
+<ul>
+<li>id方式</li>
+<li>a.name可以设置一个锚</li>
+</ul>
+<p>思考：能不能把锚点的变化改为页面内部内容的变化</p>
+<h4 id="利用锚点改变网页内容"><a href="#利用锚点改变网页内容" class="headerlink" title="利用锚点改变网页内容"></a>利用锚点改变网页内容</h4><ul>
+<li>window对象的 hashchange 事件</li>
+<li>window.location 拿到锚点的内容</li>
+<li>根据不同的hash显示不同的内容</li>
+</ul>
+<h4 id="单页应用的好处"><a href="#单页应用的好处" class="headerlink" title="单页应用的好处"></a>单页应用的好处</h4><ul>
+<li>提高了整个应用程序的响应速度、增加了用户体验</li>
+<li>重用资源</li>
+<li>方便统一控制和代码重用</li>
+</ul>
+<h4 id="SPA-面试问题"><a href="#SPA-面试问题" class="headerlink" title="SPA 面试问题"></a>SPA 面试问题</h4><ul>
+<li>SPA的核心是什么<ul>
+<li>锚点</li>
+<li>监听锚点的变化事件</li>
+<li>获取锚点内容</li>
+<li>根据不同的锚点内容做不同的内容改变</li>
+</ul>
+</li>
+<li>如何在网页中解析 URL 地址：<a href="http://www.baidu.com/a/b/c?foo=bar&amp;name=jack#/abc" target="_blank" rel="external">http://www.baidu.com/a/b/c?foo=bar&amp;name=jack#/abc</a><ul>
+<li>字符串操作</li>
+<li>正则匹配</li>
+<li>a DOM 元素解析</li>
+</ul>
+</li>
+</ul>
+<h3 id="为什么使用-Angular"><a href="#为什么使用-Angular" class="headerlink" title="为什么使用 Angular"></a>为什么使用 Angular</h3><p>以前我们是这样的：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>传统页面操作数据操作方式<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"txt_value"</span> <span class="attr">type</span>=<span class="string">"number"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn_add"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"增加"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">    (function(window, document) &#123;</div><div class="line">      var txt = document.querySelector('#txt_value');</div><div class="line">      var btn = document.querySelector('#btn_add');</div><div class="line">      btn.addEventListener('click', function(e) &#123;</div><div class="line">        var now = txt.value - 0;</div><div class="line">        now = now + 1;</div><div class="line">        txt.value = now;</div><div class="line">      &#125;);</div><div class="line">    &#125;)(window, document);</div><div class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>以后将会是这样的：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>使用AngularJS实现自增功能<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-app</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">ng-model</span>=<span class="string">"value"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">ng-click</span>=<span class="string">"value=value+1"</span> <span class="attr">value</span>=<span class="string">"增加"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../bower_components/angular/angular.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>更少的代码，实现更强劲的功能，当然不仅仅是这些，这些只是皮毛<ul>
+<li>write less , do more</li>
+<li>jQuery 提高了你操作DOM的效率</li>
+<li>Angular 减少了DOM操作</li>
+<li>Angular 不推崇直接操作DOM</li>
+</ul>
+</li>
+<li>背后带来的价值才是大大地</li>
+<li>带领前端进入了 MV* 的时代<ul>
+<li>MVC</li>
+<li>MVVM</li>
+</ul>
+</li>
+<li>又是一场革命<ul>
+<li>革命的开头 2009 起</li>
+</ul>
+</li>
+</ul>
+<h3 id="项目案例演示"><a href="#项目案例演示" class="headerlink" title="项目案例演示"></a>项目案例演示</h3><ul>
+<li>TODOList</li>
+<li>豆瓣电影列表</li>
+<li>官网示例：PhoneCat</li>
+</ul>
+<h3 id="AngularJS-使用场景"><a href="#AngularJS-使用场景" class="headerlink" title="AngularJS 使用场景"></a>AngularJS 使用场景</h3><ul>
+<li>重型的后台管理系统<ul>
+<li>有很多增删改查</li>
+<li>繁杂的 DOM 操作处理的页面</li>
+</ul>
+</li>
+<li>单页面应用程序</li>
+<li>类似于 canvas、HTML5游戏、数据可视化应用<ul>
+<li>使用 ng 就没有意义了</li>
+</ul>
+</li>
+</ul>
+<h3 id="学习资源推荐"><a href="#学习资源推荐" class="headerlink" title="学习资源推荐"></a>学习资源推荐</h3><hr>
+<h2 id="Getting-started：起步"><a href="#Getting-started：起步" class="headerlink" title="Getting started：起步"></a>Getting started：起步</h2><ul>
+<li>搜索是什么</li>
+<li>看官网能干什么</li>
+<li>探索怎么用</li>
+</ul>
+<h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><ul>
+<li>github<ul>
+<li><a href="https://github.com/angular/angular.js/releases" target="_blank" rel="external">https://github.com/angular/angular.js/releases</a></li>
+</ul>
+</li>
+<li>CDN<ul>
+<li><a href="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" target="_blank" rel="external">https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js</a></li>
+</ul>
+</li>
+<li>bower<ul>
+<li>bower install angular#1.5.8</li>
+</ul>
+</li>
+<li>npm<ul>
+<li>npm install angular@1.5.8</li>
+</ul>
+</li>
+</ul>
+<h3 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h3><h3 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h3><ul>
+<li>当网页加载完毕，AngularJS 自动开始执行</li>
+<li>HTML 页面中 <code>ng-xxx</code> 的属性称之为指令（Directive）</li>
+<li><code>ng-app</code> 指令告诉 AngularJS ，<code>&lt;body&gt;</code> 元素是 AngularJS 应用程序管理的边界</li>
+<li><code>ng-init</code> 指令初始化 AngularJS 应用程序变量</li>
+<li><code>ng-model</code> 指令把文本框的 <code>value</code> 值绑定到变量 <code>name</code> 上</li>
+<li><code></code> 表达式就是把应用程序变量 <code>name</code> 绑定到某个元素的 <code>innerHTML</code></li>
+</ul>
+<p>解析过程如下图：</p>
+<h3 id="AngularJS-指令"><a href="#AngularJS-指令" class="headerlink" title="AngularJS 指令"></a>AngularJS 指令</h3><p>AngularJS 指令是以 <code>ng-</code> 作为前缀的 HTML 属性，<br>AngularJS 通过内置的指令来为应用添加功能，<br>AngularJS 同时允许你自定义指令，从而构建更加超动感的 HTML。</p>
+<p>HTML5 允许扩展的（自制的）属性，以 <code>data-</code> 开头。<br>AngularJS 属性以 ng- 开头，但是也可以使用 <code>data-ng-</code> 来让网页对 HTML5 有效。</p>
+<ul>
+<li>ng-app</li>
+<li>ng-init</li>
+<li>ng-model</li>
+<li>ng-repeat</li>
+</ul>
+<h3 id="AngularJS-表达式"><a href="#AngularJS-表达式" class="headerlink" title="AngularJS 表达式"></a>AngularJS 表达式</h3><ul>
+<li>AngularJS 表达式写在双大括号内：<code></code></li>
+<li>AngularJS 表达式把数据绑定到 HTML，与 <code>ng-bind</code> 指令基本一致</li>
+<li>AngularJS 将在表达式书写的位置”输出”数据<ul>
+<li>数字</li>
+<li>字符串</li>
+<li>对象</li>
+<li>数组</li>
+</ul>
+</li>
+<li>AngularJS 表达式 很像 JavaScript 表达式：它们可以包含字符串、操作符和变量<ul>
+<li>与 JavaScript 表达式不同，AngularJS 表达式可以写在 HTML 中</li>
+<li>与 JavaScript 表达式不同，AngularJS 表达式不支持条件判断，循环及异常</li>
+<li>与 JavaScript 表达式不同，AngularJS 表达式支持过滤器</li>
+</ul>
+</li>
+</ul>
+<h3 id="使用-AngularJS-编写计算器应用"><a href="#使用-AngularJS-编写计算器应用" class="headerlink" title="使用 AngularJS 编写计算器应用"></a>使用 AngularJS 编写计算器应用</h3><h3 id="使用总结"><a href="#使用总结" class="headerlink" title="使用总结"></a>使用总结</h3><ul>
+<li>AngularJS 最大程度上减少了页面上的 DOM 操作</li>
+<li>让开发人员更专注于业务操作</li>
+<li>通过简洁的指令结合页面结构与逻辑数据</li>
+<li>通过自定义指令实现组件化编程</li>
+<li>代码结构更合理</li>
+<li>维护成本更低</li>
+<li>AngularJS 解放了传统 JavaScript 中频繁的 DOM 操作</li>
+</ul>
+<h3 id="查看官方文档"><a href="#查看官方文档" class="headerlink" title="查看官方文档"></a>查看官方文档</h3><hr>
+<h2 id="模块化：Module"><a href="#模块化：Module" class="headerlink" title="模块化：Module"></a>模块化：Module</h2><p>AngularJS 很重要的一个特性就是实现模块化编程，我们可以通过以下方式创建一个模块，<br>对页面进行功能业务上的划分。</p>
+<p>定义一个模块：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 注意：必须指定第二个参数，否则变成获取已定义的模块</span></div><div class="line"><span class="keyword">var</span> demoApp = angular.module(<span class="string">'DemoApp'</span>, [])</div></pre></td></tr></table></figure>
+<p>获取已有模块：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> demoApp = angular.module(<span class="string">'DemoApp'</span>)</div></pre></td></tr></table></figure>
+<p>定义依赖别的模块的模块：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> demoApp = angular.module(<span class="string">'DemoApp'</span>, [<span class="string">'Module1'</span>, <span class="string">'Module2'</span>])</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="MV"><a href="#MV" class="headerlink" title="MV*"></a>MV*</h2><p><a href="http://www.ruanyifeng.com/blog/2007/11/mvc.html" target="_blank" rel="external">阮一峰 - 谈谈MVC模式</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html" target="_blank" rel="external">阮一峰 - MVC，MVP 和 MVVM 的图示</a></p>
+<h3 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h3><ul>
+<li>职责单一</li>
+<li>MVC 是一种应用程序的开发思想，不是设计模式</li>
+<li>主要目的是为了解决应用程序展示结构，业务逻辑之间的紧耦合关系</li>
+<li>使应用程序的组成分为三个部件，每个部件都有自己明确的职责，相互之间没有依赖</li>
+</ul>
+<h4 id="MVC-组成"><a href="#MVC-组成" class="headerlink" title="MVC 组成"></a>MVC 组成</h4><ul>
+<li>Model（模型）：处理数据和业务逻辑</li>
+<li>View（视图）：以友好的方式向用户展示数据</li>
+<li>Controller（控制器）：组织调度响应的处理模型</li>
+</ul>
+<h3 id="视图交互：MVVM"><a href="#视图交互：MVVM" class="headerlink" title="视图交互：MVVM"></a>视图交互：MVVM</h3><ul>
+<li>Model</li>
+<li>View</li>
+<li>ViewModel</li>
+<li>Controller</li>
+</ul>
+<h3 id="MVC-在代码中的体现：用户注册"><a href="#MVC-在代码中的体现：用户注册" class="headerlink" title="MVC 在代码中的体现：用户注册"></a>MVC 在代码中的体现：用户注册</h3><h3 id="在-AngularJS-中使用-MVC：用户注册"><a href="#在-AngularJS-中使用-MVC：用户注册" class="headerlink" title="在 AngularJS 中使用 MVC：用户注册"></a>在 AngularJS 中使用 MVC：用户注册</h3><h3 id="体会-MVC-方式构建应用的优势"><a href="#体会-MVC-方式构建应用的优势" class="headerlink" title="体会 MVC 方式构建应用的优势"></a>体会 MVC 方式构建应用的优势</h3><hr>
+<h2 id="控制器：Controller"><a href="#控制器：Controller" class="headerlink" title="控制器：Controller"></a>控制器：Controller</h2><ul>
+<li>控制器的三种主要职责<ul>
+<li>为应用中的模型设置初始状态</li>
+<li>通过 $scope 对象把数据模型或者函数行为暴露给视图</li>
+<li>监视模型的变化，做出相应的动作（$watch）<ul>
+<li>监视用户输入的用户名，检测是否被占用</li>
+<li>监视购物车的内容变化，计算最新结果，只能监视当前 $scope 上的成员</li>
+</ul>
+</li>
+<li>公共的抽象</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">angular.module(<span class="string">'DemoApp'</span>, [])</div><div class="line">  .controller(<span class="string">'DemoController'</span>, [<span class="string">'$scope'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">$scope</span>) </span>&#123;</div><div class="line">    <span class="comment">// 在这里通过操作 $scope 改变 View 和 ViewModel</span></div><div class="line">  &#125;])</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul>
+<li><a href="https://angularjs.org/" target="_blank" rel="external">https://angularjs.org/</a></li>
+<li><a href="http://angular.io/" target="_blank" rel="external">http://angular.io/</a></li>
+<li><a href="http://www.runoob.com/angularjs/angularjs-tutorial.html" target="_blank" rel="external">http://www.runoob.com/angularjs/angularjs-tutorial.html</a></li>
+<li><a href="http://www.apjs.net/" target="_blank" rel="external">http://www.apjs.net/</a></li>
+<li><a href="http://angularjs.cn/" target="_blank" rel="external">http://angularjs.cn/</a></li>
+<li><a href="https://github.com/zensh/AngularjsTutorial_cn" target="_blank" rel="external">https://github.com/zensh/AngularjsTutorial_cn</a></li>
+<li><a href="https://item.jd.com/11522200.html" target="_blank" rel="external">https://item.jd.com/11522200.html</a></li>
+<li><a href="https://item.jd.com/11845736.html" target="_blank" rel="external">https://item.jd.com/11845736.html</a></li>
+</ul>
+<h2 id="bower"><a href="#bower" class="headerlink" title="bower"></a>bower</h2><p>bower 是一个适用于Web端第三方包的一个自动化解决方案。</p>
+<ul>
+<li>安装包<ul>
+<li>自动安装依赖项</li>
+</ul>
+</li>
+<li>卸载包</li>
+<li>更新包</li>
+<li>查找包</li>
+<li>保存依赖项</li>
+</ul>
+<h3 id="bower-的安装"><a href="#bower-的安装" class="headerlink" title="bower 的安装"></a>bower 的安装</h3><p><a href="https://bower.io/" target="_blank" rel="external">https://bower.io/</a></p>
+<ul>
+<li>node 环境<ul>
+<li><code>node -v</code></li>
+</ul>
+</li>
+<li>npm 包管理工具<ul>
+<li>基于 Node 开发的一个包管理工具</li>
+<li>npm 在安装 node 的时候已经被自动安装上了</li>
+<li><code>npm -v</code></li>
+</ul>
+</li>
+<li>git 环境<ul>
+<li><code>git --version</code></li>
+</ul>
+</li>
+<li><code>npm install --global bower</code><ul>
+<li>在操作系统全局安装一个命令行软件（CLI）</li>
+<li>Command Line Interface</li>
+<li>执行上面的命令的时候在命令行的任意目录都可以直接执行</li>
+<li>安装结束之后，通过输入 <code>bower --version</code> 查看是否安装成功</li>
+<li>对于一般的命令行工具，都可以通过 <code>工具名 -V|--version</code> 查看该工具的版本号</li>
+<li>或者 <code>工具名 --help|-h</code> 可以查看该工具的使用帮助</li>
+</ul>
+</li>
+</ul>
+<h3 id="bower-基本使用"><a href="#bower-基本使用" class="headerlink" title="bower 基本使用"></a>bower 基本使用</h3><ul>
+<li><p><code>bower install 包名</code></p>
+<ul>
+<li>在哪个项目下安装包，就切换到哪个项目根路径</li>
+<li>当安装成功的时候，bower 默认把包安装到项目根路径下的 bower_components 目录中</li>
+<li>bower 在安装包的时候还会自动安装该包的依赖项</li>
+</ul>
+</li>
+<li><p><code>bower install 包名#版本号</code></p>
+</li>
+<li><p><code>bower.json</code> 文件</p>
+<ul>
+<li>项目使用 bower 的说明文件，可以使用 <code>bower init</code> 命令以向导的形式生成</li>
+<li>该文件可以用来保存一些项目名称、作者、依赖项等信息</li>
+<li>我们在往 github 上传项目的时候，就不需要把 bower 安装的包也上传上去了，节省时间</li>
+<li>别人从 远程仓库拿到我们的项目的时候，直接执行 <code>bower install</code> 命令即可安装项目的依赖项</li>
+</ul>
+</li>
+<li><p><code>bower install 包名 --save</code> 将安装的包添加到 bower.json 文件的 dependencies 依赖项中</p>
+<ul>
+<li>每个项目如果使用 bower，最好都初始化一个 bower.json 文件</li>
+<li>同时在安装这些第三方包的时候都加上 –save 参数，保存依赖项</li>
+</ul>
+</li>
+<li><p><code>bower install</code></p>
+<ul>
+<li>该命令执行后，bower 会自动查找当前项目下的 bower.json 文件，找到里面的 dependencies 依赖项数组</li>
+<li>然后依次下载每一个依赖项到 bower_components 目录中</li>
+</ul>
+</li>
+<li><p><code>bower install 包名 --offline</code> 离线下载</p>
+<ul>
+<li>bower 对于下载过的包会缓存到计算机中</li>
+<li>使用 –offline 参数就可以实现离线下载</li>
+</ul>
+</li>
+<li><p><code>bower uninstall 包名</code></p>
+</li>
+<li><p><code>bower uninstall 包名 --save</code></p>
+<ul>
+<li>卸载包的时候同时把 bower.json 文件中的依赖项删除</li>
+</ul>
+</li>
+<li><p><code>.bowerrc</code> 配置文件</p>
+<ul>
+<li>该文件必须放到项目根路径下（也就是执行bower命令所处的目录）</li>
+<li>该文件可以用来配置一些 bower 的默认行为</li>
+<li>例如可以修改安装包的默认路径，示例如下：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"directory"</span>: <span class="string">"lib"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>关于 bower 的其它具体使用方式，可以参照官方文档进行学习查看。</p>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><ul>
+<li>CDN</li>
+</ul>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ol>
+<li>能概述 AngularJS 是什么</li>
+<li>能概述什么是 SPA 应用程序以及掌握锚点在 SPA 应用程序中的使用</li>
+<li>能掌握 bower 包管理工具的基本使用</li>
+<li>能解释一个基本的 ng 应用程序执行流程（见hello-world代码解析）</li>
+<li>能掌握 AngularJS 中的基本的指令和表达式的使用</li>
+<li>能掌握 AngularJS 中基本的模块使用（创建模块，依赖模块，获取模块）</li>
+<li>能使用 AngularJS 完成模拟用户注册功能</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-学习内容2" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/10/09/学习内容2/" class="article-date">
+      <time datetime="2014-10-09T15:59:53.000Z" itemprop="datePublished">2014-10-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/10/09/学习内容2/">学习内容</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="流行框架笔记2"><a href="#流行框架笔记2" class="headerlink" title="流行框架笔记2"></a>流行框架笔记2</h1><hr>
+<h2 id="1-复习"><a href="#1-复习" class="headerlink" title="1. 复习"></a>1. 复习</h2><ul>
+<li>Makrdown</li>
+<li>版本控制</li>
+<li>SVN<ul>
+<li>VisualSVN</li>
+<li>TortoiseSVN</li>
+</ul>
+</li>
+<li>命令行</li>
+</ul>
+<hr>
+<h2 id="2-命令行"><a href="#2-命令行" class="headerlink" title="2. 命令行"></a>2. 命令行</h2><h3 id="2-1-使用终端操作文件系统"><a href="#2-1-使用终端操作文件系统" class="headerlink" title="2.1 使用终端操作文件系统"></a>2.1 使用终端操作文件系统</h3><ul>
+<li>绝对路径和相对路径</li>
+<li>pwd（print working directory）</li>
+<li>cd（change directory）<ul>
+<li>切换到指定路径（相对路径或绝对路径）</li>
+</ul>
+</li>
+<li>ls（list files）<ul>
+<li><code>ls</code> 列出当前目录文件</li>
+<li><code>ls 目录路径</code> 列出指定路径文件</li>
+<li><code>ls -a</code> 列出文件并显示隐藏文件或目录</li>
+</ul>
+</li>
+<li>cp（copy）<ul>
+<li><code>cp 源路径 目标路径</code></li>
+<li>cp 在复制目录的时候，不会复制里面的子文件或子目录</li>
+<li>-r （recursive）递归复制</li>
+</ul>
+</li>
+<li>mv（move）：移动文件或者目录，还可以重命名文件或目录</li>
+<li>mkdir（make directory）：创建目录</li>
+<li>rm（remove）：删除文件或目录<ul>
+<li>-r 递归删除：直接将整个目录包括里面的内容都删掉</li>
+</ul>
+</li>
+<li>rmdir 目录名称<ul>
+<li>只能删除空目录</li>
+</ul>
+</li>
+<li>clear：清屏</li>
+<li>touch 文件名<ul>
+<li>根据文件名创建新的文件</li>
+</ul>
+</li>
+<li>cat 文件名<ul>
+<li>查看指定的文本文件</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-使用-less-命令浏览文件内容"><a href="#2-2-使用-less-命令浏览文件内容" class="headerlink" title="2.2 使用 less 命令浏览文件内容"></a>2.2 使用 less 命令浏览文件内容</h3><p>less 命令是一个用来浏览文本文件的程序。</p>
+<p>less 命令是这样使用的：<code>less 文本文件名</code></p>
+<p>一旦 less 程序运行起来，我们就能浏览文件内容了。<br>如果文件内容多于一页，那么我们可以上下滚动文件。按下 <code>q</code> 键，退出 less 程序。</p>
+<p>下表列出了 less 程序最常使用的键盘命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">命令               行为</div><div class="line">h                  显示帮助屏幕</div><div class="line">Page UP or b       向上翻滚一页</div><div class="line">Page Down or space 向下翻滚一页</div><div class="line">UP Arrow           向上翻滚一行</div><div class="line">Down Arrow         向下翻滚一行</div><div class="line">G                  移动到最后一行</div><div class="line">g                  移动到开头一行</div><div class="line">/charaters         向前查找指定的字符串</div><div class="line">n                  向前查找下一个出现的字符串，这个字符串是之前所指定查找的</div><div class="line">q                  退出 less 程序</div></pre></td></tr></table></figure>
+<h2 id="3-文本编辑器-vi"><a href="#3-文本编辑器-vi" class="headerlink" title="3. 文本编辑器 - vi"></a>3. 文本编辑器 - vi</h2><p>学习资源推荐：</p>
+<ul>
+<li><a href="https://github.com/yangyangwithgnu/use_vim_as_ide" target="_blank" rel="external">像 IDE 一样使用 vim</a></li>
+<li><a href="http://www.jianshu.com/p/bcbe916f97e1" target="_blank" rel="external">Vim入门基础</a></li>
+<li><a href="http://blog.jobbole.com/86132/" target="_blank" rel="external">Vim入门教程</a></li>
+<li><a href="http://coolshell.cn/articles/5426.html" target="_blank" rel="external">简明 Vim 练级攻略</a></li>
+</ul>
+<h3 id="3-1-介绍"><a href="#3-1-介绍" class="headerlink" title="3.1 介绍"></a>3.1 介绍</h3><p>vi 全称 visual interface</p>
+<ul>
+<li>可视化接口<ul>
+<li>以前的操作系统很简陋，那个时候没有光标的存在</li>
+<li>那个年代的编辑器就是行编辑器：指定你要编辑哪一行</li>
+<li>可视化接口编辑器，也就是在编辑器里面或者操作系统里面有了光标这个概念了</li>
+</ul>
+</li>
+<li>类似 Windows 中的记事本（notepad）</li>
+<li>vi 相对于 notepad 强大的不是一星半点<ul>
+<li>notepad 为了照顾更过的不懂计算机的人</li>
+</ul>
+</li>
+</ul>
+<p>学习 Linux 命令行，就像要成为一名造诣很深的钢琴家一样，它不是我们一下午就能学会<br>的技能。这需要经历几年的勤苦练习。</p>
+<p>vi 因它难用的用户界面而有点声名狼藉，但是当我们<br>看到一位大师坐在钢琴前开始演奏时，我们的确成了伟大艺术的见证人。虽然我们在这里不能<br>成为 vi 大师，但是已经可以为大家开启另一个折腾的世界了。</p>
+<h3 id="3-2-为什么学习-vi"><a href="#3-2-为什么学习-vi" class="headerlink" title="3.2 为什么学习 vi"></a>3.2 为什么学习 vi</h3><ul>
+<li>装x，高端大气上档气</li>
+<li>丢掉鼠标，提高效率<ul>
+<li>当一名熟练的 vi 用户在编辑文件时，他/她 的手从不需要移开键盘</li>
+<li>再结合一个青轴的机械键盘，尽管噼里啪啦的敲你的键盘即可</li>
+</ul>
+</li>
+<li>很多系统都预装<ul>
+<li>Linux、Mac</li>
+<li>Windows 上安装的 Git Bash 已经集成了一个 vi 编辑器</li>
+</ul>
+</li>
+<li>轻量级而且执行速度快<ul>
+<li>vi 是为了加快输入速度而设计的，没有图形界面</li>
+</ul>
+</li>
+<li>不希望其它 Linux 和 Unix 用户把我们当做胆小鬼<ul>
+<li>为了方便大家以后切换到 Linux、Mac 等OS平台能很快上手</li>
+<li>开发人员喜欢使用 Linux、Mac 就是因为其强大的命令行</li>
+<li>以后的课程：Node、移动APP、Ionic、Vue、React</li>
+</ul>
+</li>
+</ul>
+<p>好吧，可能第一点才是最重要的。</p>
+<h3 id="3-3-vi-的背景介绍"><a href="#3-3-vi-的背景介绍" class="headerlink" title="3.3 vi 的背景介绍"></a>3.3 vi 的背景介绍</h3><p>第一版 vi 是在 1976 由 <code>Bill Joy</code> 写成的，当时他是加州大学伯克利分校的学生，后来他共<br>同创建了 Sun 微系统公司。vi 这个名字来源于单词 <code>visual</code> ，因为它打算在带有可移动光标<br>的视频终端上编辑文本。在发明可视化编辑器之前，有一次只能操作一行文本的行编辑器。为<br>了指定一个修改，我们告诉行编辑器到一个特殊行并且说明做什么修改，比方说添加或删除文<br>本。视频终端（而不是基于打印机的终端，像电传打印机）的出现，可视化编辑成为可能。vi<br>实际上整合了一个强大的叫做 ex 行编辑器, 所以我们在使用 vi 时能运行行编辑命令。<br>大多数 Linux 发行版不包含真正的 vi；而是自带一款高级替代版本，叫做 <code>vim</code>（它是“vi<br>improved”的简写）由 <code>Bram Moolenaar</code> 开发的。vim 相对于传统的 Unix vi 来说，取得了实<br>质性进步。通常，vim 在 Linux 系统中是“vi”的符号链接（或别名）。在随后的介绍中，我们<br>将会假定我们有一个叫做“vi”的程序，但它其实是 vim。</p>
+<h3 id="3-4-启动和停止-vi"><a href="#3-4-启动和停止-vi" class="headerlink" title="3.4 启动和停止 vi"></a>3.4 启动和停止 vi</h3><ul>
+<li><code>vi</code> 启动 vi</li>
+<li><code>:q</code> 退出 vi</li>
+<li><code>:q!</code> 强制退出</li>
+</ul>
+<p>如果你在 vi 中“迷失”了，试着按下 Esc 键两次来找到路（回到普通模式），<br>再通过 <code>:q</code> 退出。</p>
+<h3 id="3-5-编辑模式"><a href="#3-5-编辑模式" class="headerlink" title="3.5 编辑模式"></a>3.5 编辑模式</h3><h4 id="3-5-1-创建新文件-编辑已有文件"><a href="#3-5-1-创建新文件-编辑已有文件" class="headerlink" title="3.5.1 创建新文件/编辑已有文件"></a>3.5.1 创建新文件/编辑已有文件</h4><ul>
+<li><code>vi 文件名</code> 创建新文件</li>
+<li><code>vi 文件名</code> 编辑已有文件</li>
+</ul>
+<p>注：每行开头的波浪号 <code>~</code> 指示那一行不存在文本。这表示我们有一个空文件。还没有输入<br>任何字符。</p>
+<p>学习 vi 时，要知道的第二件非常重要的事情是（知道了如何退出 vi 后）vi 是一个模式编<br>辑器。当 vi 启动后，进入的是命令模式。这种模式下，几乎每个按键都是一个命令，所以如果<br>我们打算输入字符，vi 会发疯，弄得一团糟。</p>
+<h4 id="3-5-2-插入模式"><a href="#3-5-2-插入模式" class="headerlink" title="3.5.2 插入模式"></a>3.5.2 插入模式</h4><p>为了在文件中添加文本，首先我们必须进入插入模式。按下 “i” 按键进入插入模式。之后，<br>我们应该在屏幕底部看到下面一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-- INSERT --</div></pre></td></tr></table></figure>
+<p>接来下就可以输入编辑文本内容了，例如这里输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hello world</div></pre></td></tr></table></figure>
+<p>输入完毕之后，按下 ESC 键，退出插入模式并返回命令模式。</p>
+<h4 id="3-5-3-保存工作"><a href="#3-5-3-保存工作" class="headerlink" title="3.5.3 保存工作"></a>3.5.3 保存工作</h4><ul>
+<li><code>:w</code>  保存</li>
+<li><code>:wq</code> 保存并退出</li>
+<li><code>ZZ</code> 保存并退出</li>
+<li><code>:w 文件名</code> 指定可选文件名，类似于 文件另存为</li>
+</ul>
+<h3 id="3-6-移动光标"><a href="#3-6-移动光标" class="headerlink" title="3.6 移动光标"></a>3.6 移动光标</h3><p>当在 vi 命令模式下时，vi 提供了大量的移动命令，其中一些是与 less 阅读器共享的。这里<br>列举了一些：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">按键        移动光标</div><div class="line">l or 右箭头 向右移动一个字符</div><div class="line">h or 左箭头 向左移动一个字符</div><div class="line">j or 下箭头 向下移动一行</div><div class="line">k or 上箭头 向上移动一行</div><div class="line">0 (零按键)  移动到当前行的行首。</div><div class="line">ˆ           移动到当前行的第一个非空字符。</div><div class="line">$           移动到当前行的末尾。</div><div class="line">w           移动到下一个单词或标点符号的开头。</div><div class="line">W           移动到下一个单词的开头，忽略标点符号。</div><div class="line">b           移动到上一个单词或标点符号的开头。</div><div class="line">B           移动到上一个单词的开头，忽略标点符号。</div><div class="line">Ctrl-f or Page Down 向下翻一页</div><div class="line">Ctrl-b or Page Up   向上翻一页</div><div class="line">numberG 移动到第 number 行。例如，1G 移动到文件的</div><div class="line">第一行。</div><div class="line">G 移动到文件末尾。</div></pre></td></tr></table></figure>
+<p>为什么 h，j，k，和 l 按键被用来移动光标呢？因为在开发 vi 之初，并不是所有的视频终<br>端都有箭头按键，熟练的打字员可以使用规则的键盘按键来移动光标，他们的手从不需要移开<br>键盘。</p>
+<h3 id="3-7-基本编辑"><a href="#3-7-基本编辑" class="headerlink" title="3.7 基本编辑"></a>3.7 基本编辑</h3><h4 id="3-7-1-插入"><a href="#3-7-1-插入" class="headerlink" title="3.7.1 插入"></a>3.7.1 插入</h4><ul>
+<li><code>a</code> 越过行尾，进入插入模式</li>
+<li><code>A</code> 直接移动到当前行末尾，进入插入模式</li>
+<li><code>o</code> 在当前行的下方打开一行，进入插入模式</li>
+<li><code>O</code> 在当前行的上方打开一行，进入插入模式</li>
+</ul>
+<h4 id="3-7-1-撤销"><a href="#3-7-1-撤销" class="headerlink" title="3.7.1 撤销"></a>3.7.1 撤销</h4><ul>
+<li><code>u</code> 撤销最后一次的修改</li>
+<li><code>Ctrl + r</code> 恢复上一步被撤销操作</li>
+</ul>
+<h4 id="3-7-2-删除"><a href="#3-7-2-删除" class="headerlink" title="3.7.2 删除"></a>3.7.2 删除</h4><ul>
+<li><code>x</code>    删除当前字符</li>
+<li><code>3x</code>   删除当前字符及其后的两个字符</li>
+<li><code>dd</code>   删除当前行</li>
+<li><code>5dd</code>  当前行及随后的四行文本</li>
+<li><code>dW</code>   从光标开始位置到下一个单词的开头</li>
+<li><code>d$</code>   从光标位置开始到当前行的行尾。</li>
+<li><code>d0</code>   从光标位置开始到当前行的行首。</li>
+<li><code>dˆ</code>   从光标位置开始到文本行的第一个非空字符。</li>
+<li><code>dG</code>   从当前行到文件的末尾。</li>
+<li><code>d20G</code> 从当前行到文件的第 20 行。</li>
+</ul>
+<h4 id="3-7-3-粘贴"><a href="#3-7-3-粘贴" class="headerlink" title="3.7.3 粘贴"></a>3.7.3 粘贴</h4><p>d 命令不仅删除文本，它还“剪切”文本。每次我们使用 d 命令，删除的部分被复制<br>到一个粘贴缓冲区中（看作剪切板）。</p>
+<ul>
+<li><code>p</code> 将剪切板中的文本粘贴到光标位置之后</li>
+<li><code>P</code> 将文本粘贴到光标之前</li>
+</ul>
+<h4 id="3-7-4-复制"><a href="#3-7-4-复制" class="headerlink" title="3.7.4 复制"></a>3.7.4 复制</h4><ul>
+<li><code>yy</code>    当前行。</li>
+<li><code>5yy</code>   当前行及随后的四行文本。</li>
+<li><code>yW</code>    从当前光标位置到下一个单词的开头。</li>
+<li><code>y$</code>    从当前光标位置到当前行的末尾。</li>
+<li><code>y0</code>    从当前光标位置到行首。</li>
+<li><code>yˆ</code>    从当前光标位置到文本行的第一个非空字符。</li>
+<li><code>yG</code>    从当前行到文件末尾。</li>
+<li><code>y20G</code>  从当前行到文件的第 20 行。</li>
+<li><code>J</code>     把行与行之间连接起来</li>
+</ul>
+<h3 id="3-8-查找和替换"><a href="#3-8-查找和替换" class="headerlink" title="3.8 查找和替换"></a>3.8 查找和替换</h3><h4 id="3-8-1-查找一行"><a href="#3-8-1-查找一行" class="headerlink" title="3.8.1 查找一行"></a>3.8.1 查找一行</h4><ul>
+<li><code>f要查找的字符</code><ul>
+<li>通过输入分号查找当前行下一个</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-8-2-查找整个文件"><a href="#3-8-2-查找整个文件" class="headerlink" title="3.8.2 查找整个文件"></a>3.8.2 查找整个文件</h4><ul>
+<li><code>/要查找的字符</code> 回车查找<ul>
+<li>输入 n 查找下一个</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-8-3-全局查找和替换"><a href="#3-8-3-全局查找和替换" class="headerlink" title="3.8.3 全局查找和替换"></a>3.8.3 全局查找和替换</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:%s/hello/Hello/g</div></pre></td></tr></table></figure>
+<p><code>%</code> 是一个快捷方式，表示从第一行到最后一行</p>
+<p><code>s</code> 指定操作。在这种情况下是，替换（查找与替代）。</p>
+<p><code>/hello/Hello</code> 查找类型与替代文本</p>
+<p><code>g</code> 表示“全局”的意思，意味着对文本行中所有匹配的字符串执行查找和替换操作。<br>如果省略 g，则只替换每个文本行中第一个匹配的字符串。</p>
+<h3 id="3-9-编辑多个文件"><a href="#3-9-编辑多个文件" class="headerlink" title="3.9 编辑多个文件"></a>3.9 编辑多个文件</h3><p>我们可以打开多个文件来编辑，只要在命令行中指定要编辑的文件名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi file1 file2 file3...</div></pre></td></tr></table></figure>
+<p><code>:buffers</code> 查看正在编辑的文件列表。</p>
+<h4 id="3-10-文件之间跳转"><a href="#3-10-文件之间跳转" class="headerlink" title="3.10 文件之间跳转"></a>3.10 文件之间跳转</h4><p>从当前文件切换到下一个文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:n</div></pre></td></tr></table></figure>
+<p>回到先前的文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:N</div></pre></td></tr></table></figure>
+<p>根据文件编号切换到指定文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:buffer 编号</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="3-Git"><a href="#3-Git" class="headerlink" title="3. Git"></a>3. Git</h2><h3 id="3-1-Linus-Torvalds"><a href="#3-1-Linus-Torvalds" class="headerlink" title="3.1 Linus Torvalds"></a>3.1 Linus Torvalds</h3><ul>
+<li><a href="https://zh.wikipedia.org/wiki/Linux" target="_blank" rel="external">维基百科 - Linux</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9" target="_blank" rel="external">维基百科 - 林纳斯·托瓦兹</a></li>
+<li><a href="http://baike.baidu.com/link?url=Op2mSoEhkUBdsOm-dPMHptZLBB5tiM2Evcv4lWorDH8JDHlqLtJkUsqDpDYRC7Go31N8tbjTJsYMwtz3NyKz3Ootoo4Gv35Z-SueSjmnpnSrc8X9gfjF-0N4QQv2LrNNTgR1nso1m7lXdOrmrxcNyr1iK5ZxvQ_-aikeGGZm2lu" target="_blank" rel="external">百度百科 - 林纳斯·托瓦兹</a></li>
+<li><a href="https://www.zhihu.com/question/21994269" target="_blank" rel="external">林纳斯·托瓦兹 (Linus Torvalds) 为什么被称作大神？</a></li>
+<li><a href="http://blog.csdn.net/turingbook/article/details/1775488" target="_blank" rel="external">Linux之父炮轰C++：糟糕程序员的垃圾语言</a></li>
+<li><a href="https://www.youtube.com/watch?v=iYWzMvlj2RQ" target="_blank" rel="external">YouTube - Linus Torvalds: Nvidia, * You!</a></li>
+<li>颠覆世界的“自由主义教皇”林纳斯</li>
+<li>1969年12月28日出生于芬兰赫尔辛基市，目前拥有美国国籍</li>
+<li>Linux内核的最早作者，随后发起了这个开源项目，担任Linux内核的首要架构师与项目协调者</li>
+<li>当今世界最著名的电脑程序员、黑客之一</li>
+<li>还发起了Git这个开源项目，并为主要的开发者</li>
+<li>书籍推荐<ul>
+<li><a href="https://www.amazon.cn/dp/B00MB51SAI/ref=sr_1_1?ie=UTF8&amp;qid=1475776251&amp;sr=8-1&amp;keywords=%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9" target="_blank" rel="external">只是为了好玩:Linux之父林纳斯自传</a></li>
+<li>浪潮之巅</li>
+<li>数学之美</li>
+<li>文明之光</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-诞生背景"><a href="#3-2-诞生背景" class="headerlink" title="3.2 诞生背景"></a>3.2 诞生背景</h3><p>Git 翻译过来就是 饭桶 的意思，老外就是喜欢这样的命名。</p>
+<p>gulp、grunt、bower、formidable、amazing、awesome、great</p>
+<ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137402760310626208b4f695940a49e5348b689d095fc000" target="_blank" rel="external">Git的诞生</a></li>
+<li><a href="http://www.nowamagic.net/academy/detail/48160205" target="_blank" rel="external">Git诞生背后的一些故事</a></li>
+<li><a href="https://git-scm.com/book/zh/ch1-2.html" target="_blank" rel="external">Git 简史</a></li>
+<li><p><a href="http://www.oschina.net/news/73361/git-11-bitkeeper?p=1" target="_blank" rel="external">Git 诞生 11 年后，BitKeeper 宣布开源</a></p>
+</li>
+<li><p>Linus 原来带领数百万人开发 Linux 操作系统</p>
+</li>
+<li>使用 BitKeeper 作为团队的版本协同工具<ul>
+<li>商业收费</li>
+<li>免费给 Linux 开发团队使用</li>
+</ul>
+</li>
+<li>直到有一天，其中有个开发人员试图去破解 BitKeeper 这个收费软件</li>
+</ul>
+<ul>
+<li>被 BitKeeper 发现了，就要收回 Linux 团队的免费使用权限</li>
+<li>Linus 大神一怒之下，在两三个星期之内就开发出了 Git 的初版</li>
+</ul>
+<ul>
+<li>谭浩强 - c语言入门<ul>
+<li>谭浩强了写了 c语言入门，那就有这门语言入门的好书了</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-3-分布式版本控制"><a href="#3-3-分布式版本控制" class="headerlink" title="3.3 分布式版本控制"></a>3.3 分布式版本控制</h3><h3 id="3-4-安装和配置-Git-环境"><a href="#3-4-安装和配置-Git-环境" class="headerlink" title="3.4 安装和配置 Git 环境"></a>3.4 安装和配置 Git 环境</h3><p>下载地址：<a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a></p>
+<p>历史版本地址：<a href="https://github.com/git-for-windows/git/releases" target="_blank" rel="external">https://github.com/git-for-windows/git/releases</a></p>
+<h3 id="3-5-初始设置"><a href="#3-5-初始设置" class="headerlink" title="3.5 初始设置"></a>3.5 初始设置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"yourname"</span></div><div class="line">$ git config --global user.email <span class="string">"your_email@example.com"</span></div></pre></td></tr></table></figure>
+<p>设置一下提交记录中的日志信息，待会儿让可以通过查看提交日志看到，<br>执行上面两条命令在任何目录都可以，而且只需要在第一次安装了 git 环境之后配置一下即可。</p>
+<p>如果想要修改，可以使用上面命令重新执行即可修改，<br>也可以使用另外一种方式，执行上面命令之后会在用户目录下生成一个叫做 <code>.gitconfig</code> 的文件，<br>所以也可以通过修改该文件来修改git的配置。</p>
+<h3 id="3-6-基本操作"><a href="#3-6-基本操作" class="headerlink" title="3.6 基本操作"></a>3.6 基本操作</h3><ul>
+<li><p><code>git init</code></p>
+<ul>
+<li>通过该命令创建一个本地仓库</li>
+<li>执行过后，会在目录下生成一个 <code>.git</code> 隐藏目录，最好不要手动修改</li>
+</ul>
+</li>
+<li><p><code>git status</code></p>
+<ul>
+<li>查看当前工作树状态</li>
+<li>例如有新增的文件、修改的、删除的、等操作没有被添加到暂存区或者没有被提交</li>
+<li>都可以通过 git status 命令看到</li>
+</ul>
+</li>
+<li><p><code>git add 文件名</code></p>
+<ul>
+<li>将制定的文件添加到暂存区（待提交列表）</li>
+</ul>
+</li>
+<li><p><code>git commit -m &quot;提交日志&quot;</code></p>
+<ul>
+<li>将暂存区（待提交列表）中的文件提交到本地仓库，形成一个历史快照</li>
+</ul>
+</li>
+<li><p><code>git log</code></p>
+<ul>
+<li>查看提交日志</li>
+</ul>
+</li>
+<li><p><code>gitk</code></p>
+<ul>
+<li>以图形化的界面查看本地仓库提交日志状态</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-7-分支的操作"><a href="#3-7-分支的操作" class="headerlink" title="3.7 分支的操作"></a>3.7 分支的操作</h3><p>git 的灵魂：分支</p>
+<ul>
+<li><p>查看分支：<code>git branch</code></p>
+</li>
+<li><p>创建分支：<code>git branch &lt;name&gt;</code></p>
+</li>
+<li><p>切换分支：<code>git checkout &lt;name&gt;</code></p>
+</li>
+<li><p>交替切换分支：<code>git checkout -</code></p>
+</li>
+<li><p>创建+切换分支：<code>git checkout -b &lt;name&gt;</code></p>
+</li>
+<li><p>基于某个分支创建新的分支并切换到该分支：<code>git checkout -b &lt;name&gt; &lt;name&gt;</code></p>
+</li>
+<li><p>合并某分支到当前分支：<code>git merge &lt;name&gt;</code></p>
+</li>
+<li><p>合并某分支到当前分支并提交记录提交日志：<code>git merge --no-ff &lt;name&gt; -m &quot;提交日志&quot;</code></p>
+</li>
+<li><p>删除分支：<code>git branch -d &lt;name&gt;</code></p>
+</li>
+<li><p>以图表形式查看日志 <code>git log --graph</code></p>
+</li>
+</ul>
+<p>分支管理策略：</p>
+<ul>
+<li>master<ul>
+<li>代码库应该有一个、且仅有一个主分支，所有提供给用户使用的正式版本，都在这个主分支上发布</li>
+<li>Git主分支的名字，默认叫做 master</li>
+<li>主分支只用来分布重大版本</li>
+</ul>
+</li>
+<li>develop<ul>
+<li>日常开发应该在另一条分支上完成。我们把开发用的分支，叫做Develop</li>
+<li>如果想正式对外发布，就在Master分支上，对Develop分支进行”合并”（merge）</li>
+<li>合并的时候最好采用 <code>--no-ff</code> 的形式，在 master 上形成一个提交历史记录节点</li>
+</ul>
+</li>
+<li>feature-特性名 特性（功能）分支<ul>
+<li>针对某个具体的功能创建的一个分支</li>
+<li>开发的时候，所有开发人员针对 develop 进行开发，然后合并到 master<ul>
+<li>然后我们可以基于 develop 分支创建一些特性分支（一般是开发人员自己创建的）</li>
+<li>团队开发人员都最好都基于 develop 分支去创建自己对应的特性分支，最后去和 develop 分支进行合并</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>release 预发布分支<ul>
+<li>发布之前先将 develop 分支预发布到 release 发布分支中</li>
+<li>接下来，测试人员就可以拿到这个 release 分支版本，进行测试</li>
+<li>测试人员如果在测试的过程中发现 bug，会将 bug 告诉响应的开发人员，bug 追踪系统</li>
+</ul>
+</li>
+<li>fixbug 修改 bug 分支<ul>
+<li>该分支用于解决测试人员提交给你的 bug 的</li>
+<li>fixbug 分支解决完毕之后，最后再次合并到 release 预发布分支中</li>
+<li>再次交给测试人员，测试人员回去通过这个分支版本继续测试，找 bug</li>
+<li>直到最后没有问题，合并到 master 分支中</li>
+</ul>
+</li>
+</ul>
+<p>一般在开发过程中，会创建一个 develop 的开发分支，<br>永远不要基于 master 分支去开发。<br>master 分支最好用于保留一个没有 bug ，随时可以发送的一个版本。</p>
+<ul>
+<li>master 分支是 git 默认创建的分支，基本上所有分支都是以这个分支为中心进行的</li>
+<li>不同分支中，可以同时进行完全不同的开发，各个分支之间不会相互影响彼此</li>
+<li>等分支的开发完成后再与 master 分支进行合并<ul>
+<li>master 也叫作主干分支，是所有分支的原点，同时也是合并的终点</li>
+</ul>
+</li>
+<li>通过灵活运用分支，可以让多人同时高效的进行并行开发</li>
+</ul>
+<p>关于分支的管理以及分支的协同开发，目前还体会不到，因为没有大型项目可以演练，后面可以在做项目的时候，<br>可以多给大家引入一些分支的使用以体会基于不同的分支开发所带来的好处，目前先以体会概念为主，<br>当然了，很多分支管理策略也只是理论上的畅想而已，真正在开发的过程中，都是可以灵活变通的，<br>并不一定完全遵守死板的规则。</p>
+<h3 id="3-8-更改提交的操作"><a href="#3-8-更改提交的操作" class="headerlink" title="3.8 更改提交的操作"></a>3.8 更改提交的操作</h3><p>指定文件回滚：</p>
+<ul>
+<li><p><code>git checkout [file]</code></p>
+<ul>
+<li>恢复暂存区的指定文件到工作区</li>
+</ul>
+</li>
+<li><p><code>git checkout [commit] [file]</code></p>
+<ul>
+<li>恢复某个commit的指定文件到暂存区和工作区</li>
+</ul>
+</li>
+<li><p><code>git checkout .</code></p>
+<ul>
+<li>恢复暂存区的所有文件到工作区</li>
+</ul>
+</li>
+</ul>
+<p>指定版本回滚：</p>
+<ul>
+<li><p><code>git reset --hard</code></p>
+<ul>
+<li>恢复暂存区和工作区到上一次最新的提交</li>
+</ul>
+</li>
+<li><p><code>git reset --hard 提交哈希值</code></p>
+<ul>
+<li>根据提交哈希值（版本号）回溯到历史版本</li>
+</ul>
+</li>
+<li><p><code>git reflog</code></p>
+<ul>
+<li>查看当前仓库操作日志</li>
+</ul>
+</li>
+<li><p><code>git commit --amend</code></p>
+<ul>
+<li>修改最近一次提交的提交日志</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-9-推送至远程仓库"><a href="#3-9-推送至远程仓库" class="headerlink" title="3.9 推送至远程仓库"></a>3.9 推送至远程仓库</h3><p>如果已经有了一个本地仓库，就可以通过下面的形式和线上的空仓库产生关联：</p>
+<ul>
+<li>remote 添加远程仓库地址</li>
+<li>add commit branch 等操作</li>
+<li>pull</li>
+<li><p>push</p>
+</li>
+<li><p><code>git remote add origin 远程仓库地址</code></p>
+<ul>
+<li>git 会自动将远程仓库地址起个别名 origin</li>
+</ul>
+</li>
+<li><code>git push -u origin master</code><ul>
+<li>推送到名称为 origin 远程仓库地址下的 master 分支下</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-10-从远程仓库获取"><a href="#3-10-从远程仓库获取" class="headerlink" title="3.10 从远程仓库获取"></a>3.10 从远程仓库获取</h3><p>如果已经创建了一个远程仓库，就可以遵循下面的模式进行开发：</p>
+<ul>
+<li>clone</li>
+<li>add commit branch 等操作</li>
+<li>Pull</li>
+<li><p>push</p>
+</li>
+<li><p><code>git clone 仓库地址</code></p>
+<ul>
+<li>git 会自动将 origin 设置为该远程仓库地址的标识符</li>
+</ul>
+</li>
+<li><code>git pull</code></li>
+</ul>
+<p>所以在进行 push 之前，最好前 pull 一下，拉取最新源代码。</p>
+<h3 id="3-11-学习资料推荐"><a href="#3-11-学习资料推荐" class="headerlink" title="3.11 学习资料推荐"></a>3.11 学习资料推荐</h3><ul>
+<li><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">git - 简明指南</a></li>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰 - git教程</a></li>
+<li><a href="https://git.oschina.net/progit/" target="_blank" rel="external">Pro Git</a></li>
+<li><a href="http://backlogtool.com/git-guide/cn/" target="_blank" rel="external">猴子都能懂的git入门</a></li>
+<li><a href="http://gitref.org/zh/remotes/" target="_blank" rel="external">git参考手册</a></li>
+<li><a href="http://item.jd.com/11733256.html" target="_blank" rel="external">github入门与实践</a></li>
+<li><a href="http://item.jd.com/11615420.html" target="_blank" rel="external">Git版本控制管理</a></li>
+</ul>
+<h3 id="3-12-推荐文章"><a href="#3-12-推荐文章" class="headerlink" title="3.12 推荐文章"></a>3.12 推荐文章</h3><p>知名博主：</p>
+<ul>
+<li><a href="http://www.ruanyifeng.com/home.html" target="_blank" rel="external">阮一峰</a><ul>
+<li>社会百科 - 知名博主 - 目前就职于支付宝前端团队</li>
+<li><a href="http://item.jd.com/10582495.html" target="_blank" rel="external">黑客与画家</a></li>
+</ul>
+</li>
+<li><a href="http://www.zhangxinxu.com/" target="_blank" rel="external">张鑫旭</a><ul>
+<li>对 CSS 研究很深入</li>
+</ul>
+</li>
+</ul>
+<p>git 学习推荐廖雪峰的 git 教程 + 阮一峰的 git 博客整理教程：</p>
+<ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰 - git教程</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2015/08/git-use-process.html?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">Git 使用规范流程</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html?bsh_bid=5983510" target="_blank" rel="external">常用 Git 命令清单</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="external">Git远程操作详解</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2015/12/git-workflow.html" target="_blank" rel="external">Git 工作流程</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2012/07/git.html" target="_blank" rel="external">Git分支管理策略</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" target="_blank" rel="external">Commit message 和 Change log 编写指南</a></li>
+</ul>
+<hr>
+<h2 id="4-Github"><a href="#4-Github" class="headerlink" title="4. Github"></a>4. Github</h2><p><a href="https://github.com/" target="_blank" rel="external">Github</a> 是为开发者提供 Git 仓库的托管服务。<br>是一个可以让开发者与朋友、同事、同学及陌生人共享代码的完美平台。<br>简而言之，Github 就是程序员的新浪微博，社交化编程。</p>
+<ul>
+<li><a href="https://guides.github.com/" target="_blank" rel="external">GitHub Guides</a></li>
+<li><a href="https://www.youtube.com/githubguides" target="_blank" rel="external">GitHub Training &amp; Guides</a></li>
+<li><a href="http://item.jd.com/11733256.html" target="_blank" rel="external">GitHub入门与实践</a></li>
+</ul>
+<h3 id="4-1-介绍"><a href="#4-1-介绍" class="headerlink" title="4.1 介绍"></a>4.1 介绍</h3><ul>
+<li>Github 与 Git 的区别<ul>
+<li>Git 是一个分布式版本控制系统<ul>
+<li>历史记录的问题</li>
+<li>多人协作的问题</li>
+</ul>
+</li>
+<li>Github 是为开发者提供 Git 仓库的托管服务</li>
+</ul>
+</li>
+<li>不仅仅是 Git 仓库的托管服务</li>
+<li>社交元素：项目点赞、关注项目Watch、Pull Request 等功能<ul>
+<li>Pull Request：假设你修改了一个开源仓库源代码</li>
+<li>你可以通过 Pull Request 请求合并，请求合并到源代码仓库中</li>
+<li>当你发送了请求合并，别人会收到你的合并请求，然后会检查你的合并请求，如果没有问题，就可以直接合并到源代码库中</li>
+</ul>
+</li>
+<li>Github Flavored Markdown<ul>
+<li>写说明文档、发布评论等都使用的是 Markdown</li>
+</ul>
+</li>
+<li>基本上各大开源产品都在 Github 上<ul>
+<li>jQuery、bootstrap、AngularJS、Vue、React、Node</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-2-基本使用"><a href="#4-2-基本使用" class="headerlink" title="4.2 基本使用"></a>4.2 基本使用</h3><ul>
+<li>创建账户</li>
+<li>设置头像</li>
+<li>创建仓库</li>
+<li>连接仓库</li>
+<li>公开代码<ul>
+<li>克隆仓库 clone</li>
+<li>编写代码</li>
+<li>提交 commit</li>
+<li>进行 push</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-3-Pull-Request"><a href="#4-3-Pull-Request" class="headerlink" title="4.3 Pull Request"></a>4.3 Pull Request</h3><p>演示社交化编程</p>
+<ul>
+<li>fork<ul>
+<li>表示将对方的仓库克隆你的账号下</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-4-使用-Github-Pages-搭建静态站点"><a href="#4-4-使用-Github-Pages-搭建静态站点" class="headerlink" title="4.4 使用 Github Pages 搭建静态站点"></a>4.4 使用 Github Pages 搭建静态站点</h3><p>[GitHub Pages -  官方教程]</p>
+<p>我们可以把静态网站部署到 Github 上，然后通过特定的域名就可以访问了。</p>
+<ol>
+<li>在 github 上创建一个空仓库，仓库名称以 <code>你自己github用户名.github.io</code></li>
+<li>然后提交文件到该仓库中，注意：仓库根路径必须有一个 index.html 文件</li>
+<li>接下来就可以通过 <code>你自己的github用户名.github.io</code> 来访问你托管的那个静态网站仓库了，默认去找 index.html 页面</li>
+</ol>
+<p>还可以通过创建不同名字的仓库用来托管别的静态网站项目，如果想要通过你的github域名来访问，<br>就必须把你托管的文件放到一个叫做 <code>gh-pages</code> 的分支中。<br>然后就可以通过 <code>你的github用户名.github.io/拥有gh-pages分支的仓库名称</code> 来访问你的这个网站了</p>
+<hr>
+<h3 id="Github-总结"><a href="#Github-总结" class="headerlink" title="Github 总结"></a>Github 总结</h3><ul>
+<li>有的公司用 Github</li>
+<li>Gitlab 搭建在公司内部本地<ul>
+<li>一个开源的类似于 Github 功能的网站，开源部署在本地免费使用</li>
+<li>有一些公司也是自己搭建的 Gitlab 本地仓库服务供团队开发使用</li>
+</ul>
+</li>
+<li>coding</li>
+<li>bitbucket<ul>
+<li>开源免费托管私有仓库</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-使用-Hexo-搭建自己的个人静态博客"><a href="#5-使用-Hexo-搭建自己的个人静态博客" class="headerlink" title="5. 使用 Hexo 搭建自己的个人静态博客"></a>5. 使用 Hexo 搭建自己的个人静态博客</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></p>
+<ul>
+<li>必须安装 Node 环境<ul>
+<li>通过在终端任意目录输入 <code>node -v</code> 查看是否有输入node的版本</li>
+</ul>
+</li>
+<li>在终端的任意目录输入 <code>npm install -g hexo-cli</code> 然后回车执行等待安装成功<ul>
+<li>通过输入 <code>hexo --version</code> 如果看到输入一大堆的版本号就说明安装成功了</li>
+<li>Hexo 是一个命令行应用程序</li>
+</ul>
+</li>
+<li>接下来通过输入 <code>hexp init 博客项目存储目录</code><ul>
+<li>Hexo 会在你执行该命令的目录下生成一个博客项目</li>
+<li>初始化博客项目的过程需要联网</li>
+</ul>
+</li>
+<li>接下来通过终端进入刚才创建的博客项目目录，然后在该目录下输入 <code>npm install</code> 回车等待执行结束</li>
+<li><p>接下来输入 <code>hexo server</code> 回车执行，它会在你的本地启动一个服务器，然后就可以访问你的博客项目</p>
+</li>
+<li><p>进入博客项目，输入 <code>hexo new 文章名称</code> 创建博客</p>
+<ul>
+<li>该命令会自动在 source/_posts/ 目录下生成一个 文章名称.md 文件</li>
+</ul>
+</li>
+<li><p>生成静态文件：<code>hexo generate</code></p>
+<ul>
+<li>该命令会自动在项目的根目录下的 public 目录下降静态文件放进去吧</li>
+</ul>
+</li>
+<li><p>快速部署</p>
+<ul>
+<li>修改配置文件</li>
+<li>在项目根路径下执行 <code>npm install hexo-deployer-git --save</code> 该命令</li>
+<li>接下来就可以直接输入 <code>hexo deploy --generate</code> 自动发布到 github 上</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-学习内容1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/10/09/学习内容1/" class="article-date">
+      <time datetime="2014-10-09T14:08:42.000Z" itemprop="datePublished">2014-10-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/10/09/学习内容1/">git使用指南</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="流行框架笔记1"><a href="#流行框架笔记1" class="headerlink" title="流行框架笔记1"></a>流行框架笔记1</h1><blockquote>
+<p>本着不负责任的态度去学习<br>也就是玩儿玩儿的心态</p>
+</blockquote>
+<hr>
+<h2 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h2><!-- MarkdownTOC -->
+<ul>
+<li><a href="#markdown">Markdown</a><ul>
+<li><a href="#markdown-介绍">Markdown 介绍</a></li>
+<li><a href="#markdown-的优点">Markdown 的优点</a></li>
+<li><a href="#实时预览编辑器">实时预览编辑器</a></li>
+<li><a href="#markdown-基本语法">Markdown 基本语法</a></li>
+<li><a href="#markdown-相关插件">Markdown 相关插件</a></li>
+<li><a href="#markdown-使用场景">Markdown 使用场景</a></li>
+<li><a href="#用-markdown-写一封漂亮的电子邮件">用 Markdown 写一封漂亮的电子邮件</a></li>
+<li><a href="#使用-gitbook-制作电子书">使用 GitBook 制作电子书</a></li>
+<li><a href="#自己动手做一个-markdown-实时预览编辑器">自己动手做一个 Markdown 实时预览编辑器</a></li>
+<li><a href="#thanks">Thanks</a></li>
+</ul>
+</li>
+<li><a href="#版本控制">版本控制</a><ul>
+<li><a href="#问题1：历史记录">问题1：历史记录</a></li>
+<li><a href="#问题2：多人协作">问题2：多人协作</a></li>
+<li><a href="#解决问题：软件">解决问题：软件</a></li>
+<li><a href="#那什么是版本控制呢？">那什么是版本控制呢？</a></li>
+<li><a href="#版本管理分类">版本管理分类</a></li>
+</ul>
+</li>
+<li><a href="#集中式版本控制---svn">集中式版本控制 - SVN</a><ul>
+<li><a href="#集中式：svn">集中式：SVN</a></li>
+<li><a href="#一些术语">一些术语</a></li>
+<li><a href="#使用-visualsvn-搭建-svn-服务器">使用 VisualSVN 搭建 SVN 服务器</a></li>
+<li><a href="#使用-tortoisesvn-作为-svn-客户端">使用 TortoiseSVN 作为 SVN 客户端</a></li>
+<li><a href="#tortoisesvn-客户端基本操作流程">TortoiseSVN 客户端基本操作流程</a></li>
+<li><a href="#关于冲突">关于冲突</a></li>
+<li><a href="#版本管理使用建议">版本管理使用建议</a></li>
+</ul>
+</li>
+<li><a href="#命令行">命令行</a><ul>
+<li><a href="#gui-vs-cli">GUI VS CLI</a></li>
+<li><a href="#shell">shell</a></li>
+<li><a href="#终端仿真器">终端仿真器</a></li>
+<li><a href="#安装-git-for-windows-客户端体验-shell">安装 Git for Windows 客户端体验 shell</a></li>
+<li><a href="#打开和退出终端">打开和退出终端</a></li>
+<li><a href="#使用终端操作文件系统">使用终端操作文件系统</a></li>
+<li><a href="#使用-less-命令浏览文件内容">使用 less 命令浏览文件内容</a></li>
+</ul>
+</li>
+<li><a href="#文本编辑器---vi">文本编辑器 - vi</a><ul>
+<li><a href="#介绍">介绍</a></li>
+<li><a href="#为什么学习-vi">为什么学习 vi</a></li>
+<li><a href="#vi-的背景介绍">vi 的背景介绍</a></li>
+<li><a href="#启动和停止-vi">启动和停止 vi</a></li>
+<li><a href="#编辑模式">编辑模式</a><ul>
+<li><a href="#创建新文件编辑已有文件">创建新文件/编辑已有文件</a></li>
+<li><a href="#插入模式">插入模式</a></li>
+<li><a href="#保存工作">保存工作</a></li>
+</ul>
+</li>
+<li><a href="#移动光标">移动光标</a></li>
+<li><a href="#基本编辑">基本编辑</a><ul>
+<li><a href="#撤销">撤销</a></li>
+<li><a href="#删除">删除</a></li>
+<li><a href="#粘贴">粘贴</a></li>
+<li><a href="#复制">复制</a></li>
+<li><a href="#连接行">连接行</a></li>
+</ul>
+</li>
+<li><a href="#查找和替换">查找和替换</a><ul>
+<li><a href="#查找一行">查找一行</a></li>
+<li><a href="#查找整个文件">查找整个文件</a></li>
+<li><a href="#全局查找和替换">全局查找和替换</a></li>
+</ul>
+</li>
+<li><a href="#编辑多个文件">编辑多个文件</a><ul>
+<li><a href="#文件之间跳转">文件之间跳转</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#分布式版本控制---git">分布式版本控制 - Git</a><ul>
+<li><a href="#分布式版本管理概念">分布式版本管理概念</a></li>
+<li><a href="#linus-benedict-torvalds">Linus Benedict Torvalds</a></li>
+<li><a href="#git-诞生历史">git 诞生历史</a></li>
+<li><a href="#安装-git-环境">安装 git 环境</a></li>
+<li><a href="#初始设置">初始设置</a></li>
+<li><a href="#简单操作">简单操作</a></li>
+<li><a href="#分支操作">分支操作</a></li>
+<li><a href="#更改提交">更改提交</a></li>
+</ul>
+</li>
+<li><a href="#about-me">About me</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+<h2 id="课程大纲"><a href="#课程大纲" class="headerlink" title="课程大纲"></a>课程大纲</h2><ul>
+<li>Markdown</li>
+<li>SVN</li>
+<li>Git<ul>
+<li>shell</li>
+<li>vi 编辑器</li>
+</ul>
+</li>
+<li>NPM</li>
+<li>bower</li>
+<li>AngularJS</li>
+<li>gulp</li>
+<li>微信小程序</li>
+</ul>
+<p>总而言之，这是一门教你程序员如何装 x 的技能，一起 get 吧。</p>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><blockquote>
+<p>专注写作，提高生产力</p>
+</blockquote>
+<h3 id="Markdown-介绍"><a href="#Markdown-介绍" class="headerlink" title="Markdown 介绍"></a>Markdown 介绍</h3><p>轻量级标记语言（html、xml），2004 年被 <code>John Gruber</code> 创造，<br>它允许人们“使用易读易写的纯文本格式编写文档”，<br>Markdown 最重要的设计就是可读性，<br>Markdown 可以选择性的转换为 HTML 文档格式，<br>很多网站目前都使用了 Markdown 或者其变种，例如Github、简书等大型社区。</p>
+<h3 id="Markdown-的优点"><a href="#Markdown-的优点" class="headerlink" title="Markdown 的优点"></a>Markdown 的优点</h3><ul>
+<li>纯文本，所以兼容性极强，可以用所有文本编辑器打开</li>
+<li>专注于文字写作而不是排版</li>
+<li>格式转换方便，可以轻松转换为 HTML、PPT、电子书等</li>
+<li>Markdown 标记语法简单好记，可读性强</li>
+</ul>
+<h3 id="实时预览编辑器"><a href="#实时预览编辑器" class="headerlink" title="实时预览编辑器"></a>实时预览编辑器</h3><p><a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="external">月光博客 - 好用的Markdown编辑器一览</a></p>
+<ul>
+<li>dillinger</li>
+<li>马克飞象</li>
+<li>简书</li>
+<li>MarkdownPad</li>
+<li>Sublime Text<ul>
+<li>配合 <code>Markdown Preview</code> 插件</li>
+</ul>
+</li>
+<li>Webstorm<ul>
+<li>配合插件</li>
+</ul>
+</li>
+<li>gitbook</li>
+</ul>
+<p>编辑实时预览工具只是为了辅助教学而已，<br>我们真正在进行写作的时候，其实是不需要实时预览的，<br>因为 Markdown 标记语言本身已经足够清晰了。</p>
+<h3 id="Markdown-基本语法"><a href="#Markdown-基本语法" class="headerlink" title="Markdown 基本语法"></a>Markdown 基本语法</h3><ul>
+<li>标题</li>
+<li>段落</li>
+<li>粗体</li>
+<li>斜体</li>
+<li>无序列表</li>
+<li>有序列表</li>
+<li>链接</li>
+<li>图片</li>
+<li>文本引用</li>
+<li>行内代码引用</li>
+<li>多行代码引用</li>
+<li>表格</li>
+</ul>
+<h3 id="Markdown-相关插件"><a href="#Markdown-相关插件" class="headerlink" title="Markdown 相关插件"></a>Markdown 相关插件</h3><ul>
+<li>Sublime<ul>
+<li>MarkdownEditing</li>
+<li>MarkdownPreview</li>
+</ul>
+</li>
+</ul>
+<h3 id="Markdown-使用场景"><a href="#Markdown-使用场景" class="headerlink" title="Markdown 使用场景"></a>Markdown 使用场景</h3><ul>
+<li>个人笔记</li>
+<li>文章博客</li>
+<li>教学讲义</li>
+<li>说明文档</li>
+<li>电子邮件</li>
+</ul>
+<p>只要有写作的地方，都可以使用 Markdown 来书写。</p>
+<h3 id="用-Markdown-写一封漂亮的电子邮件"><a href="#用-Markdown-写一封漂亮的电子邮件" class="headerlink" title="用 Markdown 写一封漂亮的电子邮件"></a>用 Markdown 写一封漂亮的电子邮件</h3><p>为什么要用 Markdown 写电子邮件？ 答案是：<code>装x</code>。</p>
+<p>当然不是了，Markdown 本身语法简单，使用 Markdown 写出来的内容结构也非常清晰，<br>有助于协作沟通，总而言之，使用 Markdown 可以可以让你更加专注写作本身。</p>
+<p>其实就是讲md格式字符串转换成html而已，这里使用一个 Chrome 插件：</p>
+<p><a href="https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa?utm_source=chrome-ntp-icon" target="_blank" rel="external">Markdown Here</a></p>
+<h3 id="使用-GitBook-制作电子书"><a href="#使用-GitBook-制作电子书" class="headerlink" title="使用 GitBook 制作电子书"></a>使用 GitBook 制作电子书</h3><p><a href="https://www.gitbook.com/" target="_blank" rel="external">GitBook</a></p>
+<h3 id="自己动手做一个-Markdown-实时预览编辑器"><a href="#自己动手做一个-Markdown-实时预览编辑器" class="headerlink" title="自己动手做一个 Markdown 实时预览编辑器"></a>自己动手做一个 Markdown 实时预览编辑器</h3><p>Markdown 本身就是一个标记语言，可以通过某种方式转换成别的文本格式，本质上转换的过程其实就是做正则解析替换。</p>
+<ul>
+<li>如何将markdown格式字符串转成html<ul>
+<li>使用一个第三方包：marked</li>
+</ul>
+</li>
+<li>给html设置样式</li>
+<li>给代码块设置颜色高亮<ul>
+<li><a href="https://highlightjs.org/" target="_blank" rel="external">highlightjs</a></li>
+<li>自己动手看文档尝试一下如何加上代码高亮</li>
+</ul>
+</li>
+</ul>
+<h3 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h3><ul>
+<li><a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">https://zh.wikipedia.org/wiki/Markdown</a></li>
+<li><a href="http://www.jianshu.com/p/q81RER" target="_blank" rel="external">http://www.jianshu.com/p/q81RER</a></li>
+<li><a href="http://wowubuntu.com/markdown/" target="_blank" rel="external">http://wowubuntu.com/markdown/</a></li>
+<li><a href="http://www.jianshu.com/p/PpDNMG" target="_blank" rel="external">http://www.jianshu.com/p/PpDNMG</a></li>
+<li><a href="http://www.jianshu.com/p/qqGjLN" target="_blank" rel="external">http://www.jianshu.com/p/qqGjLN</a></li>
+<li><a href="https://www.zhihu.com/question/20409634" target="_blank" rel="external">https://www.zhihu.com/question/20409634</a></li>
+<li><a href="http://www.markdown.cn/" target="_blank" rel="external">http://www.markdown.cn/</a></li>
+</ul>
+<hr>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><blockquote>
+<p>了解版本管理概念以及集中式和分布式版本管理</p>
+</blockquote>
+<p>在介绍什么是版本控制之前，咱们先来看两个问题：</p>
+<h3 id="问题1：历史记录"><a href="#问题1：历史记录" class="headerlink" title="问题1：历史记录"></a>问题1：历史记录</h3><p>如果你用Microsoft Word写过长篇大论，那你一定有这样的经历：</p>
+<p>想删除一个段落，又怕将来想恢复找不回来怎么办？</p>
+<p>有办法，先把当前文件“另存为……”一个新的Word文件，再接着改，</p>
+<p>改到一定程度，再“另存为……”一个新文件，这样一直改下去，最后你的Word文档变成了这样：</p>
+<p>过了一周，你想找回被删除的文字，但是已经记不清删除前保存在哪个文件里了，只好一个一个文件去找，真麻烦。</p>
+<p>看着一堆乱七八糟的文件，想保留最新的一个，然后把其他的删掉，又怕哪天会用上，还不敢删，真郁闷。</p>
+<h3 id="问题2：多人协作"><a href="#问题2：多人协作" class="headerlink" title="问题2：多人协作"></a>问题2：多人协作</h3><p>更要命的是，有些部分需要你的财务同事帮助填写，<br>于是你把文件Copy到U盘里给她（也可能通过Email发送一份给她），<br>然后，你继续修改Word文件。<br>一天后，同事再把Word文件传给你，此时，你必须想想，<br>发给她之后到你收到她的文件期间，你作了哪些改动，得把你的改动和她的部分合并，真困难。</p>
+<h3 id="解决问题：软件"><a href="#解决问题：软件" class="headerlink" title="解决问题：软件"></a>解决问题：软件</h3><p>于是你想，如果有一个软件，不但能自动帮我记录每次文件的改动，还可以让同事协作编辑，<br>这样就不用自己管理一堆类似的文件了，也不需要把文件传来传去。<br>如果想查看某次改动，只需要在软件里瞄一眼就可以，岂不是很方便？</p>
+<p>这个软件用起来就应该像这个样子，能记录每次文件的改动：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">版本  用户  说明                   日期</div><div class="line">1     张三  删除了软件服务条款5    7/12 10:38</div><div class="line">2     张三  增加了License人数限制  7/12 18:09</div><div class="line">3     李四  财务部门调整了合同金额 7/13 9:51</div><div class="line">4     张三  延长了免费升级周期     7/14 15:17</div></pre></td></tr></table></figure>
+<p>这样，你就结束了手动管理多个“版本”的史前时代，进入到版本控制的20世纪。</p>
+<h3 id="那什么是版本控制呢？"><a href="#那什么是版本控制呢？" class="headerlink" title="那什么是版本控制呢？"></a>那什么是版本控制呢？</h3><p>版本管理就是管理更新的历史记录，<br>它给我们提供了一些在软件开发过程中必不可少的功能，例如：</p>
+<ul>
+<li>记录一款软件添加或更改源代码的过程</li>
+<li>回滚到特定阶段，恢复误删除的文件</li>
+<li>合并多人协作的文件等</li>
+</ul>
+<h3 id="版本管理分类"><a href="#版本管理分类" class="headerlink" title="版本管理分类"></a>版本管理分类</h3><p>版本管理分为集中式版本管理和分布式版本管理，这两种方式有什么差异，我们接下来一一介绍。</p>
+<h2 id="集中式版本控制-SVN"><a href="#集中式版本控制-SVN" class="headerlink" title="集中式版本控制 - SVN"></a>集中式版本控制 - SVN</h2><p>SVN 全称 Apache Subversion，是一个开放源代码的集中式版本管理系统。<br>在 2000 年由 CollabNet 开发，现已发展成为 Apache 软件基金会的一个项目。</p>
+<h3 id="集中式：SVN"><a href="#集中式：SVN" class="headerlink" title="集中式：SVN"></a>集中式：SVN</h3><p>早期的版本管理就是以 <code>Apache Subversion</code> 为代表的集中式版本管理，<br>如下图所示将仓库集中存放在服务器之中，所以只有一个仓库。<br>这就是为什么这种版本管理系统会被称作集中式版本管理。</p>
+<p>集中式版本管理将所有的数据集中存放在服务器中，这是有便于统一管理的优点。</p>
+<p>但是一旦开发者所处的环境不能连接服务器，就无法获取最新源代码，开发也就无法进行。</p>
+<p>服务器宕机时也是同样的道理，而且万一服务器故障导致数据丢失，<br>恐怕开发者就再也见不到最新的源代码了。</p>
+<p>简而言之：</p>
+<ul>
+<li>中央服务器好比是一个图书馆</li>
+<li>你要改一本书，必须先从图书馆借出来（checkout）</li>
+<li>然后回到家自己改，改完了，再放到图书馆（commit）</li>
+</ul>
+<h3 id="一些术语"><a href="#一些术语" class="headerlink" title="一些术语"></a>一些术语</h3><ul>
+<li>源代码库（repository）：源代码统一存放的地方</li>
+<li>检出（checkout）：当你手上没有源代码的时候，就需要从 responsive checkout 一份</li>
+<li>提交（commit）：当你已经修改了代码，就需要 commit 到 repository</li>
+<li>更新（update）：当你已经 checkout 了一份源代码，Update 一下就可以和 repository 上的源代码同步，你手上的代码就会有最新的变更</li>
+</ul>
+<h3 id="使用-VisualSVN-搭建-SVN-服务器"><a href="#使用-VisualSVN-搭建-SVN-服务器" class="headerlink" title="使用 VisualSVN 搭建 SVN 服务器"></a>使用 VisualSVN 搭建 SVN 服务器</h3><p><a href="https://www.visualsvn.com/" target="_blank" rel="external">!VisualSVN</a></p>
+<p>SVN 服务器：运行 Subversion 服务的计算机。</p>
+<p>SVN服务器分为命令行工具和图形化工具，<br>为了方便，我们这里使用比较流行的图形化工具 <a href="https://www.visualsvn.com/" target="_blank" rel="external">VisualSVN</a></p>
+<p>安装完毕之后，基本使用流程如下：</p>
+<ul>
+<li>创建用户或组</li>
+<li>创建版本仓库</li>
+<li>设定用户权限</li>
+</ul>
+<h3 id="使用-TortoiseSVN-作为-SVN-客户端"><a href="#使用-TortoiseSVN-作为-SVN-客户端" class="headerlink" title="使用 TortoiseSVN 作为 SVN 客户端"></a>使用 TortoiseSVN 作为 SVN 客户端</h3><p><a href="https://tortoisesvn.net/" target="_blank" rel="external">TortoiseSVN</a></p>
+<p>SVN 客户端：用户通过SVN客户端同SVN服务器交互</p>
+<p>SVN 客户端也分为命令行工具和图形化工具，这里我们使用最流行的 <a href="https://tortoisesvn.net/" target="_blank" rel="external">TortoiseSVN</a></p>
+<h3 id="TortoiseSVN-客户端基本操作流程"><a href="#TortoiseSVN-客户端基本操作流程" class="headerlink" title="TortoiseSVN 客户端基本操作流程"></a>TortoiseSVN 客户端基本操作流程</h3><ul>
+<li>检出项目：checkout</li>
+<li>增加文件或目录：add（增加），commit（提交）</li>
+<li>修改文件或目录：commit（提交）</li>
+<li>删除文件或目录：commit（提交）</li>
+<li>更新文件或目录：update（更新）</li>
+<li>查看版本日志：log（日志）</li>
+</ul>
+<h3 id="关于冲突"><a href="#关于冲突" class="headerlink" title="关于冲突"></a>关于冲突</h3><p>多人协作时，同个目录或同个文件需要不同成员共同开发，<br>这个时候 commit 和 update 就可能出现冲突。</p>
+<ul>
+<li>两个程序员只要不是修改了同一行程序，SVN 可以通过 update 自动合并修改</li>
+<li>但是如果两个程序员修改了同一行程序， SVN 会提示文件 conflict，需要手动确定</li>
+</ul>
+<p>如何解决？</p>
+<p>第一种解决方法：手动合并冲突的内容</p>
+<p>第二种解决方法：每次修改某个文件的时候对文件上锁，这样你在修改的过程中别人就无法更新这个文件</p>
+<p>建议：</p>
+<ul>
+<li>多跟团队成员沟通</li>
+<li>不要随便去修改别人的文件</li>
+<li>一个文件最好同一时间只被一个人修改更新</li>
+</ul>
+<h3 id="版本管理使用建议"><a href="#版本管理使用建议" class="headerlink" title="版本管理使用建议"></a>版本管理使用建议</h3><ul>
+<li>不要频繁的提交版本</li>
+<li>每次 commit 之前或之后都要 update</li>
+<li>每次 commit 的时候都要写提交日志</li>
+</ul>
+<hr>
+<h2 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h2><p>在电影中一个“超级黑客”坐在电脑前，从不摸一下鼠标，<br>就能够在 30 秒内侵入到超安全的军事计算机中。<br>这是因为电影制片人意识到，<br>作为人类，本能地知道让计算机圆满完成工作的唯一途径，是用键盘来操纵计算机。</p>
+<h3 id="GUI-VS-CLI"><a href="#GUI-VS-CLI" class="headerlink" title="GUI VS CLI"></a>GUI VS CLI</h3><p>现在，大多数的计算机用户只是熟悉图形用户界面（GUI），并且产品供应商和此领域的学<br>者会灌输给用户这样的思想，命令行界面（CLI）是过去使用的一种很恐怖的东西。这就很不<br>幸，因为一个好的命令行界面，是用来和计算机进行交流沟通的非常有效的方式，正像人类社<br>会使用文字互通信息一样。人们说， <strong>图形用户界面让简单的任务更容易完成，而命令行界面<br>使完成复杂的任务成为可能</strong> ，到现在这句话仍然很正确。</p>
+<h3 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h3><p>一说到命令行，其实真正指的是 <code>shell</code>。</p>
+<p><strong>shell 就是一个程序，它接受从键盘输入的命令，然后把命令传递给操作系统去执行。</strong></p>
+<p>几乎所有的 Linux 发行版都提供一个名为 <code>bash</code> 的 shell 程序。<br>bash 是 <code>Bourne Again SHell</code> 的首字母缩写，所指的是这样一个事实。</p>
+<h3 id="终端仿真器"><a href="#终端仿真器" class="headerlink" title="终端仿真器"></a>终端仿真器</h3><p>当使用图形用户界面时，我们需要另一个和 shell 交互的叫做终端仿真器的程序。<br>在 Windows 上，一般使用操作系统自带的 <code>cmd</code> 或者 <code>powershell</code>。<br>在 Linux 上，如果是图形用户界面，那么可以使用 <code>terminal</code> 或者 <code>konsole</code>、<code>gnome-terminal</code> 之类<br>的终端仿真器，但基本上，它们都完成同样的事情，让我们能访问 shell，<br>你可能会因为附加的一些花俏功能而喜欢上某个终端。</p>
+<p>关于名字，如果有人提到：控制台、终端、bash、shell、terminal 等，一般都是指上面这些。</p>
+<h3 id="安装-Git-for-Windows-客户端体验-shell"><a href="#安装-Git-for-Windows-客户端体验-shell" class="headerlink" title="安装 Git for Windows 客户端体验 shell"></a>安装 Git for Windows 客户端体验 shell</h3><p>注意：虽然在 Windows 上可以通过 cmd 或 powershell 体验终端的使用，<br>但是学习终端最正确的方式是学习 Linux 上的命令行，要更纯正，更强大。</p>
+<p>所以，我们这里通过使用 Git for Windows 客户端（自带了一个 bash）可以供我们学习 shell。</p>
+<h3 id="打开和退出终端"><a href="#打开和退出终端" class="headerlink" title="打开和退出终端"></a>打开和退出终端</h3><h3 id="使用终端操作文件系统"><a href="#使用终端操作文件系统" class="headerlink" title="使用终端操作文件系统"></a>使用终端操作文件系统</h3><ul>
+<li>绝对路径和相对路径</li>
+<li>pwd（print working directory）</li>
+<li>cd（change directory）<ul>
+<li>切换到指定路径（相对路径或绝对路径）</li>
+</ul>
+</li>
+<li>ls（list files）<ul>
+<li><code>ls</code> 列出当前目录文件</li>
+<li><code>ls 目录路径</code> 列出指定路径文件</li>
+<li><code>ls -a</code> 列出文件并显示隐藏文件或目录</li>
+</ul>
+</li>
+<li>cp（copy）<ul>
+<li><code>cp 源路径 目标路径</code></li>
+<li>cp 在复制目录的时候，不会复制里面的子文件或子目录</li>
+<li>-r （recursive）递归复制</li>
+</ul>
+</li>
+<li>mv（move）：移动文件或者目录，还可以重命名文件或目录</li>
+<li>mkdir（make directory）：创建目录</li>
+<li>rm（remove）：删除文件或目录<ul>
+<li>-r 递归删除：直接将整个目录包括里面的内容都删掉</li>
+</ul>
+</li>
+<li>clear：清屏</li>
+<li>touch 创建文件</li>
+<li>cat 查看文本文件</li>
+</ul>
+<p>案例：命令综合练习</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">1. 在桌面下创建一个叫做 `itcast` 的目录</div><div class="line">2. 在 itcast 目录下，分别创建 `dir1` 和 `dir2` 两个子目录</div><div class="line">3. 复制 `code/scripts/main.js` 文件到 `itcast` 目录中</div><div class="line">4. 复制 `code` 目录下的 `js` 目录到 `itcast` 目录中</div><div class="line">5. 将 `itcast/main.js` 文件重命名为 `main-main.js`</div><div class="line">6. 将 `main-main.js` 文件移动到 dir1 中</div><div class="line">7. 将 `dir1` 中的 `main-main.js` 文件移动到 dir2 中</div><div class="line">8. 将 `itcast/js` 目录删除</div></pre></td></tr></table></figure>
+<p>以后多使用，就会越用越熟。</p>
+<h3 id="使用-less-命令浏览文件内容"><a href="#使用-less-命令浏览文件内容" class="headerlink" title="使用 less 命令浏览文件内容"></a>使用 less 命令浏览文件内容</h3><p>less 命令是一个用来浏览文本文件的程序。</p>
+<p>less 命令是这样使用的：<code>less 文本文件名</code></p>
+<p>一旦 less 程序运行起来，我们就能浏览文件内容了。<br>如果文件内容多于一页，那么我们可以上下滚动文件。按下 <code>q</code> 键，退出 less 程序。</p>
+<p>下表列出了 less 程序最常使用的键盘命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">命令               行为</div><div class="line">h                  显示帮助屏幕</div><div class="line">Page UP or b       向上翻滚一页</div><div class="line">Page Down or space 向下翻滚一页</div><div class="line">UP Arrow           向上翻滚一行</div><div class="line">Down Arrow         向下翻滚一行</div><div class="line">G                  移动到最后一行</div><div class="line">g                  移动到开头一行</div><div class="line">/charaters         向前查找指定的字符串</div><div class="line">n                  向前查找下一个出现的字符串，这个字符串是之前所指定查找的</div><div class="line">q                  退出 less 程序</div></pre></td></tr></table></figure>
+<h2 id="文本编辑器-vi"><a href="#文本编辑器-vi" class="headerlink" title="文本编辑器 - vi"></a>文本编辑器 - vi</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>vi 全称 visual interface</p>
+<ul>
+<li>可视化接口</li>
+<li>类似 Windows 中的记事本（notepad）</li>
+<li>vi 相对于 notepad 强大的不是一星半点</li>
+</ul>
+<p>学习 Linux 命令行，就像要成为一名造诣很深的钢琴家一样，它不是我们一下午就能学会<br>的技能。这需要经历几年的勤苦练习。</p>
+<p>vi 因它难用的用户界面而有点声名狼藉，但是当我们<br>看到一位大师坐在钢琴前开始演奏时，我们的确成了伟大艺术的见证人。虽然我们在这里不能<br>成为 vi 大师，但是已经可以为大家开启另一个折腾的世界了。</p>
+<h3 id="为什么学习-vi"><a href="#为什么学习-vi" class="headerlink" title="为什么学习 vi"></a>为什么学习 vi</h3><ul>
+<li>装x，高端大气上档气</li>
+<li>丢掉鼠标，提高效率<ul>
+<li>当一名熟练的 vi 用户在编辑文件时，他/她 的手从不需要移开键盘</li>
+<li>再结合一个青轴的机械键盘，尽管噼里啪啦的敲你的键盘即可</li>
+</ul>
+</li>
+<li>很多系统都预装<ul>
+<li>Linux、Mac</li>
+</ul>
+</li>
+<li>轻量级而且执行速度快<ul>
+<li>vi 是为了加快输入速度而设计的，没有图形界面</li>
+</ul>
+</li>
+<li>不希望其它 Linux 和 Unix 用户把我们当做胆小鬼</li>
+</ul>
+<p>好吧，可能第一点才是最重要的。</p>
+<h3 id="vi-的背景介绍"><a href="#vi-的背景介绍" class="headerlink" title="vi 的背景介绍"></a>vi 的背景介绍</h3><p>第一版 vi 是在 1976 由 <code>Bill Joy</code> 写成的，当时他是加州大学伯克利分校的学生，后来他共<br>同创建了 Sun 微系统公司。vi 这个名字来源于单词 <code>visual</code> ，因为它打算在带有可移动光标<br>的视频终端上编辑文本。在发明可视化编辑器之前，有一次只能操作一行文本的行编辑器。为<br>了指定一个修改，我们告诉行编辑器到一个特殊行并且说明做什么修改，比方说添加或删除文<br>本。视频终端（而不是基于打印机的终端，像电传打印机）的出现，可视化编辑成为可能。vi<br>实际上整合了一个强大的叫做 ex 行编辑器, 所以我们在使用 vi 时能运行行编辑命令。<br>大多数 Linux 发行版不包含真正的 vi；而是自带一款高级替代版本，叫做 <code>vim</code>（它是“vi<br>improved”的简写）由 <code>Bram Moolenaar</code> 开发的。vim 相对于传统的 Unix vi 来说，取得了实<br>质性进步。通常，vim 在 Linux 系统中是“vi”的符号链接（或别名）。在随后的介绍中，我们<br>将会假定我们有一个叫做“vi”的程序，但它其实是 vim。</p>
+<h3 id="启动和停止-vi"><a href="#启动和停止-vi" class="headerlink" title="启动和停止 vi"></a>启动和停止 vi</h3><ul>
+<li><code>vi</code> 启动 vi</li>
+<li><code>:q</code> 退出 vi</li>
+<li><code>:q!</code> 强制退出</li>
+</ul>
+<p>如果你在 vi 中“迷失”了，试着按下 Esc 键两次来找到路（回到普通模式），<br>再通过 <code>:q</code> 退出。</p>
+<h3 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h3><h4 id="创建新文件-编辑已有文件"><a href="#创建新文件-编辑已有文件" class="headerlink" title="创建新文件/编辑已有文件"></a>创建新文件/编辑已有文件</h4><ul>
+<li><code>vi 文件名</code> 创建新文件</li>
+<li><code>vi 文件名</code> 编辑已有文件</li>
+</ul>
+<p>注：每行开头的波浪号 <code>~</code> 指示那一行不存在文本。这表示我们有一个空文件。还没有输入<br>任何字符。</p>
+<p>学习 vi 时，要知道的第二件非常重要的事情是（知道了如何退出 vi 后）vi 是一个模式编<br>辑器。当 vi 启动后，进入的是命令模式。这种模式下，几乎每个按键都是一个命令，所以如果<br>我们打算输入字符，vi 会发疯，弄得一团糟。</p>
+<h4 id="插入模式"><a href="#插入模式" class="headerlink" title="插入模式"></a>插入模式</h4><p>为了在文件中添加文本，首先我们必须进入插入模式。按下 “i” 按键进入插入模式。之后，<br>我们应该在屏幕底部看到下面一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-- INSERT --</div></pre></td></tr></table></figure>
+<p>接来下就可以输入编辑文本内容了，例如这里输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hello world</div></pre></td></tr></table></figure>
+<p>输入完毕之后，按下 ESC 键，退出插入模式并返回命令模式。</p>
+<h4 id="保存工作"><a href="#保存工作" class="headerlink" title="保存工作"></a>保存工作</h4><ul>
+<li><code>:w</code>  保存</li>
+<li><code>:wq</code> 保存并退出</li>
+<li><code>ZZ</code> 保存并退出</li>
+<li><code>:w 文件名</code> 指定可选文件名，类似于 文件另存为</li>
+</ul>
+<h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><p>当在 vi 命令模式下时，vi 提供了大量的移动命令，其中一些是与 less 阅读器共享的。这里<br>列举了一些：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">按键        移动光标</div><div class="line">l or 右箭头 向右移动一个字符</div><div class="line">h or 左箭头 向左移动一个字符</div><div class="line">j or 下箭头 向下移动一行</div><div class="line">k or 上箭头 向上移动一行</div><div class="line">0 (零按键)  移动到当前行的行首。</div><div class="line">ˆ           移动到当前行的第一个非空字符。</div><div class="line">$           移动到当前行的末尾。</div><div class="line">w           移动到下一个单词或标点符号的开头。</div><div class="line">W           移动到下一个单词的开头，忽略标点符号。</div><div class="line">b           移动到上一个单词或标点符号的开头。</div><div class="line">B           移动到上一个单词的开头，忽略标点符号。</div><div class="line">Ctrl-f or Page Down 向下翻一页</div><div class="line">Ctrl-b or Page Up   向上翻一页</div><div class="line">numberG 移动到第 number 行。例如，1G 移动到文件的</div><div class="line">第一行。</div><div class="line">G 移动到文件末尾。</div></pre></td></tr></table></figure>
+<p>为什么 h，j，k，和 l 按键被用来移动光标呢？因为在开发 vi 之初，并不是所有的视频终<br>端都有箭头按键，熟练的打字员可以使用规则的键盘按键来移动光标，他们的手从不需要移开<br>键盘。</p>
+<h3 id="基本编辑"><a href="#基本编辑" class="headerlink" title="基本编辑"></a>基本编辑</h3><ul>
+<li><code>a</code> 越过行尾，进入插入模式</li>
+<li><code>A</code> 直接移动到当前行末尾，进入插入模式</li>
+<li><code>o</code> 在当前行的下方打开一行，进入插入模式</li>
+<li><code>O</code> 在当前行的上方打开一行，进入插入模式</li>
+</ul>
+<h4 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h4><ul>
+<li><code>u</code> 撤销最后一次的修改</li>
+<li><code>Ctrl + r</code> 恢复上一步被撤销操作</li>
+</ul>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><ul>
+<li><code>x</code>    删除当前字符</li>
+<li><code>3x</code>   删除当前字符及其后的两个字符</li>
+<li><code>dd</code>   删除当前行</li>
+<li><code>5dd</code>  当前行及随后的四行文本</li>
+<li><code>dW</code>   从光标开始位置到下一个单词的开头</li>
+<li><code>d$</code>   从光标位置开始到当前行的行尾。</li>
+<li><code>d0</code>   从光标位置开始到当前行的行首。</li>
+<li><code>dˆ</code>   从光标位置开始到文本行的第一个非空字符。</li>
+<li><code>dG</code>   从当前行到文件的末尾。</li>
+<li><code>d20G</code> 从当前行到文件的第 20 行。</li>
+</ul>
+<h4 id="粘贴"><a href="#粘贴" class="headerlink" title="粘贴"></a>粘贴</h4><p>d 命令不仅删除文本，它还“剪切”文本。每次我们使用 d 命令，删除的部分被复制<br>到一个粘贴缓冲区中（看作剪切板）。</p>
+<ul>
+<li><code>p</code> 将剪切板中的文本粘贴到光标位置之后</li>
+<li><code>P</code> 将文本粘贴到光标之前</li>
+</ul>
+<h4 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h4><ul>
+<li><code>yy</code>    当前行。</li>
+<li><code>5yy</code>   当前行及随后的四行文本。</li>
+<li><code>yW</code>    从当前光标位置到下一个单词的开头。</li>
+<li><code>y$</code>    从当前光标位置到当前行的末尾。</li>
+<li><code>y0</code>    从当前光标位置到行首。</li>
+<li><code>yˆ</code>    从当前光标位置到文本行的第一个非空字符。</li>
+<li><code>yG</code>    从当前行到文件末尾。</li>
+<li><code>y20G</code>  从当前行到文件的第 20 行。</li>
+</ul>
+<h4 id="连接行"><a href="#连接行" class="headerlink" title="连接行"></a>连接行</h4><ul>
+<li><code>J</code>   把行与行之间连接起来</li>
+</ul>
+<h3 id="查找和替换"><a href="#查找和替换" class="headerlink" title="查找和替换"></a>查找和替换</h3><h4 id="查找一行"><a href="#查找一行" class="headerlink" title="查找一行"></a>查找一行</h4><ul>
+<li><code>f要查找的字符</code><ul>
+<li>通过输入分号查找当前行下一个</li>
+</ul>
+</li>
+</ul>
+<h4 id="查找整个文件"><a href="#查找整个文件" class="headerlink" title="查找整个文件"></a>查找整个文件</h4><ul>
+<li><code>/要查找的字符</code> 回车查找<ul>
+<li>输入 n 查找下一个</li>
+</ul>
+</li>
+</ul>
+<h4 id="全局查找和替换"><a href="#全局查找和替换" class="headerlink" title="全局查找和替换"></a>全局查找和替换</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:%s/hello/Hello/g</div></pre></td></tr></table></figure>
+<p><code>%</code> 是一个快捷方式，表示从第一行到最后一行</p>
+<p><code>s</code> 指定操作。在这种情况下是，替换（查找与替代）。</p>
+<p><code>/hello/Hello</code> 查找类型与替代文本</p>
+<p><code>g</code> 表示“全局”的意思，意味着对文本行中所有匹配的字符串执行查找和替换操作。<br>如果省略 g，则只替换每个文本行中第一个匹配的字符串。</p>
+<h3 id="编辑多个文件"><a href="#编辑多个文件" class="headerlink" title="编辑多个文件"></a>编辑多个文件</h3><p>过 vi，我们可以打开多个文件来编辑，只要在命令行中指定要编辑的文件名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi file1 file2 file3...</div></pre></td></tr></table></figure>
+<p><code>:buffers</code> 查看正在编辑的文件列表。</p>
+<h4 id="文件之间跳转"><a href="#文件之间跳转" class="headerlink" title="文件之间跳转"></a>文件之间跳转</h4><p>从当前文件切换到下一个文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:n</div></pre></td></tr></table></figure>
+<p>回到先前的文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:N</div></pre></td></tr></table></figure>
+<p>根据文件编号切换到指定文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:buffer 编号</div></pre></td></tr></table></figure>
+<h2 id="分布式版本控制-Git"><a href="#分布式版本控制-Git" class="headerlink" title="分布式版本控制 - Git"></a>分布式版本控制 - Git</h2><h3 id="分布式版本管理概念"><a href="#分布式版本管理概念" class="headerlink" title="分布式版本管理概念"></a>分布式版本管理概念</h3><h3 id="Linus-Benedict-Torvalds"><a href="#Linus-Benedict-Torvalds" class="headerlink" title="Linus Benedict Torvalds"></a>Linus Benedict Torvalds</h3><p><a href="https://zh.wikipedia.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9" target="_blank" rel="external">Linus Benedict Torvalds</a></p>
+<h3 id="git-诞生历史"><a href="#git-诞生历史" class="headerlink" title="git 诞生历史"></a>git 诞生历史</h3><h3 id="安装-git-环境"><a href="#安装-git-环境" class="headerlink" title="安装 git 环境"></a>安装 git 环境</h3><h3 id="初始设置"><a href="#初始设置" class="headerlink" title="初始设置"></a>初始设置</h3><h3 id="简单操作"><a href="#简单操作" class="headerlink" title="简单操作"></a>简单操作</h3><ul>
+<li><code>git init</code></li>
+<li><code>git status</code></li>
+<li><code>git add</code></li>
+<li><code>git commit</code></li>
+<li><code>git log</code></li>
+</ul>
+<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><ul>
+<li><code>git branch</code> 查看当前分支列表</li>
+<li><code>git branch 分支名称</code> 创建分支</li>
+<li><code>git checkout 分支名称</code> 切换到指定分支</li>
+<li><code>git checkout -b 分支名称</code> 创建分支并切换到该分支</li>
+<li><code>git checkout -</code> 切换回上一个分支</li>
+<li><code>git merge 分支名称</code> 合并分支<ul>
+<li>注意：要先切换回主分支</li>
+</ul>
+</li>
+<li><code>git merge --no-ff 分支名称</code> 合并提交</li>
+<li><p><code>git log --graph</code> 以图表形式查看日志</p>
+</li>
+<li><p>master 分支是 git 默认创建的分支，基本上所有分支都是以这个分支为中心进行的</p>
+</li>
+<li>不同分支中，可以同时进行完全不同的开发，各个分支之间不会相互影响彼此</li>
+<li>等分支的开发完成后再与 master 分支进行合并<ul>
+<li>master 也叫作主干分支，是所有分支的原点，同时也是合并的终点</li>
+</ul>
+</li>
+<li>通过灵活运用分支，可以让多人同时高效的进行并行开发</li>
+</ul>
+<h3 id="更改提交"><a href="#更改提交" class="headerlink" title="更改提交"></a>更改提交</h3><ul>
+<li><code>git reset --hard 提交哈希值</code> 根据提交哈希值回溯到历史版本</li>
+<li><code>git reflog</code> 查看当前仓库操作日志</li>
+<li><code>git commit --amend</code> 修改提交信息</li>
+</ul>
+<h2 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h2><h2 id="mada"><a href="#mada" class="headerlink" title="mada"></a>mada</h2><p>Code-Style: <a href="http://standardjs.com/" target="_blank" rel="external">JavaScript Standard Style</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/09/09/hello-world/" class="article-date">
+      <time datetime="2014-09-09T14:08:42.000Z" itemprop="datePublished">2014-09-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/09/09/hello-world/">Hello World Hexo</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
 </div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Ma Da
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
 
 
-<div id="btn-view">Hide</div>
 
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
 <script>
-// is trigger analytics / tongji script
-var isIgnoreHost = false;
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
 
-if(window && window.location && window.location.host) {
-  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
-    return 0 === window.location.host.indexOf(address);
-  });
-}
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
-var isTriggerAnalytics = !( true && isIgnoreHost );
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
 
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
 </script>
 
 
-
-
-  
-  
-    <script src="/js/jquery-2.2.3.min.js"></script>
-  
-    <script src="/js/vegas.min.js"></script>
-  
-    <script src="/js/random.js"></script>
-  
-    <script src="/js/highlight.pack.js"></script>
-  
-    <script src="/js/jquery.mousewheel.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox.pack.js"></script>
-  
-    <script src="/js/jquery.fancybox-thumbs.js"></script>
-  
-    <script src="/js/plyr.js"></script>
-  
-
-<script>
-
-  // fancybox
-  var backgroundImages = [];
-  
-  $('#post').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
-      var alt = this.alt || this.title;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'post' + i);
-    });
-  });
-  $(".fancybox").fancybox();
-
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":5000,"shuffle":true,"count":28};
-var unsplashConfig = {"gravity":"north"};
-// is show background images
-var turnoffBackgroundImage = false;
-
-
-
-
-var backgroundColor = "34495E";
-
-$(".fancybox-thumb").fancybox({
-  prevEffect: 'none',
-  nextEffect: 'none',
-  helpers: {
-    title: {
-      type: 'outside'
-    },
-    thumbs: {
-      width: 50,
-      height: 50
-    }
-  }
-});
-
-// show video with plyr
-$(".video-container iframe").each(function(i){
-  var url = $(this).attr('src');
-  var id = url.split('/').pop();
-  var plyrContainer = document.createElement('div');
-  plyrContainer.className = 'plyr';
-  var plyrElement = document.createElement('div');
-  plyrElement.dataset.videoId = id;
-  switch(true) {
-    case url.search('youtube.com') >= 0:
-      plyrElement.dataset.type = 'youtube';
-      break;
-    case url.search('vimeo.com') >= 0:
-      plyrElement.dataset.type = 'vimeo';
-      break;
-    default:
-      return;
-  };
-  plyrContainer.appendChild(plyrElement);
-  $(this).parent().html(plyrContainer);
-});
-plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
-</script>
+  </div>
 </body>
 </html>
-
